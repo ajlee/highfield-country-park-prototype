@@ -2,6 +2,12 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "bootstrap-package-manager": "^1.1.8",
-    "gulp": "^3.9.1"
-  }
+    "gulp": "^3.9.1",
+    "jquery": "^3.2.1"
+  },
+  "name": "HTML",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "Alex <alexjameslee@mykolab.com>",
+  "license": "MIT"
 }
