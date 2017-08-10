@@ -1,26 +1,2 @@
 .nav-text-column {
-  margin-top:6rem;
-}
-
-
-h1.title {
-  bottom:0;
-  color:#fff;
-}
-
-.title-container {
-  position:absolute;
-  padding:1rem 4rem;
-  bottom:3rem;
-}
-.title-bg {
-  height:800px;
-  background: #fff url("../images/factoryandpark.jpg") top center/cover no-repeat;
-  position: relative;
-}
-
-.title-bg-v2 {
-  height:400px;
-  background: #fff url("../images/factoryandpark.jpg") top center/cover no-repeat;
-  position: relative;
-}
+  margin-top: 6rem; }

@@ -1,27 +1,34 @@
+
 .title-container-static {
-  padding: 1rem 4rem;
-  bottom: 3rem; }
+  padding:1rem 4rem;
+  bottom:3rem;
+}
+
 
 .title-bg-v2 {
-  height: 400px;
+  height:400px;
   background: #fff url("../images/factoryandpark.jpg") top center/cover no-repeat;
-  position: relative; }
+  position: relative;
+}
 
 .title-bg-v3 {
-  height: 800px;
-  width: 100%;
+  height:800px;
+  width:100%;
   background: #fff url("../images/factoryandpark.jpg") top center/cover no-repeat;
-  position: absolute; }
+  position: absolute;
+}
 
 .title-bg-warhol {
-  height: 800px;
-  width: 100%;
-  position: absolute; }
+  height:800px;
+  width:100%;
+  position: absolute;
+}
 
 .header-test {
-  width: 100%;
+  width:100%;
   background-color: #fff;
   position: fixed;
-  top: 0;
-  height: 96px;
-  z-index: 10; }
+  top:0;
+  height:96px;
+  z-index:10;
+}
