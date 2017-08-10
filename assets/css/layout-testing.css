@@ -1,7 +1,3 @@
-.nav-text-column {
-  margin-top:6rem;
-}
-
 
 h1.title {
   bottom:0;
@@ -10,6 +6,11 @@ h1.title {
 
 .title-container {
   position:absolute;
+  padding:1rem 4rem;
+  bottom:3rem;
+}
+
+.title-container-static {
   padding:1rem 4rem;
   bottom:3rem;
 }
@@ -23,4 +24,17 @@ h1.title {
   height:400px;
   background: #fff url("../images/factoryandpark.jpg") top center/cover no-repeat;
   position: relative;
+}
+
+.title-bg-v3 {
+  height:800px;
+  width:100%;
+  background: #fff url("../images/factoryandpark.jpg") top center/cover no-repeat;
+  position: absolute;
+}
+
+.title-bg-warhol {
+  height:800px;
+  width:100%;
+  position: absolute;
 }
