@@ -1,0 +1,57 @@
+@import "variables.scss";
+@import "colours.scss";
+
+html, body {
+  font-size:18px;
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+  font-family: Open Sans, Sans;
+  font-weight: 300;
+
+  small {
+    font-weight: 800;
+    color:inherit;
+  }
+}
+
+/* font sizes and line heights - use http://type-scale.com/ perfect fourth */
+
+h1 {
+  font-size: 3.157rem;
+
+ // font-size:3.375rem;
+}
+
+h2 {
+  font-size:2.369rem;
+}
+
+h3 {
+  font-size:1.777rem;
+}
+
+h4 {
+  font-size:1.5rem;
+}
+
+p {
+  font-family: Lora, Georgia;
+}
+
+p {
+  color:$colour_second_light;
+  font-size:1rem;
+  line-height: 1.5rem;
+}
+
+h1.title {
+  bottom:0;
+  color:#fff;
+  text-shadow: 3px 3px 8px #000;
+
+  small {
+    display:block;
+    padding:1.5rem 0;
+  }
+}

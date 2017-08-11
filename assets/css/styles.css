@@ -1,63 +1,131 @@
 /* bootstrap variables */
 /* element spacing */
 /* screen widths */
-html {
-  font-size: 18px;
-  background-color: #efefef; }
+/* bootstrap variables */
+/* element spacing */
+/* screen widths */
+/* line 6, assets/scss/layout.scss */
+.title-container {
+  position: absolute;
+  padding: 1rem 2em;
+  bottom: 90px; }
 
+/* line 12, assets/scss/layout.scss */
+.title-container-outer {
+  min-width: 100%; }
+
+/* line 16, assets/scss/layout.scss */
+.title-bg {
+  background: #fff url("../images/factoryandpark.jpg") top center/cover no-repeat;
+  position: relative; }
+
+/* line 21, assets/scss/layout.scss */
+.text-box {
+  padding: 0 30px; }
+
+/* line 25, assets/scss/layout.scss */
+.nav-text-column {
+  background-color: #DEE1B6; }
+
+/*
+ * main section
+ */
+/* line 35, assets/scss/layout.scss */
+.main-content {
+  top: 61px; }
+  /* line 38, assets/scss/layout.scss */
+  .main-content .column {
+    height: 600px; }
+
+/* bootstrap variables */
+/* element spacing */
+/* screen widths */
+/* line 4, assets/scss/typography.scss */
+html, body {
+  font-size: 18px; }
+
+/* line 8, assets/scss/typography.scss */
 h1, h2, h3, h4, h5, h6, nav {
   font-family: Open Sans, Sans;
   font-weight: 300; }
+  /* line 12, assets/scss/typography.scss */
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, nav small {
     font-weight: 800;
     color: inherit; }
 
 /* font sizes and line heights - use http://type-scale.com/ perfect fourth */
+/* line 20, assets/scss/typography.scss */
 h1 {
   font-size: 3.157rem; }
 
+/* line 26, assets/scss/typography.scss */
 h2 {
   font-size: 2.369rem; }
 
+/* line 30, assets/scss/typography.scss */
 h3 {
   font-size: 1.777rem; }
 
+/* line 34, assets/scss/typography.scss */
 h4 {
   font-size: 1.5rem; }
 
+/* line 38, assets/scss/typography.scss */
 p {
   font-family: Lora, Georgia; }
 
+/* line 42, assets/scss/typography.scss */
 p {
-  color: #343434;
+  color: #564334;
   font-size: 1rem;
   line-height: 1.5rem; }
 
-nav.primary {
-  padding: 15px; }
+/* line 48, assets/scss/typography.scss */
+h1.title {
+  bottom: 0;
+  color: #fff;
+  text-shadow: 3px 3px 8px #000; }
+  /* line 53, assets/scss/typography.scss */
+  h1.title small {
+    display: block;
+    padding: 1.5rem 0; }
 
+/* bootstrap variables */
+/* element spacing */
+/* screen widths */
+/* line 4, assets/scss/nav.scss */
+.header-fixed {
+  background-color: #9E9A41;
+  height: 60px;
+  border-bottom: 1px solid #49281F; }
+
+/* line 10, assets/scss/nav.scss */
 nav.primary ul {
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
   list-style: none; }
 
+/* line 16, assets/scss/nav.scss */
 nav.primary li {
   position: relative;
   display: inline-block;
   text-align: center;
-  padding: 1rem 1rem 0rem 1rem;
+  padding: 1rem;
   margin: 0; }
 
+/* line 24, assets/scss/nav.scss */
 nav.primary a {
   position: relative;
-  font-size: 1.5rem;
-  color: #111;
+  color: #49281F;
   text-decoration: none;
   font-weight: 500; }
 
+/* line 31, assets/scss/nav.scss */
 nav.primary li:hover a {
   color: #222;
   text-shadow: 0 0 2px #dedede; }
 
+/* line 36, assets/scss/nav.scss */
 nav.primary li:hover a span:after {
   content: '';
   width: 100%;
@@ -66,23 +134,4 @@ nav.primary li:hover a span:after {
   bottom: -15px;
   border-bottom: 1px solid red; }
 
-h1.title {
-  bottom: 0;
-  color: #fff;
-  text-shadow: 3px 3px 8px #000; }
-  h1.title small {
-    display: block;
-    padding: 1.5rem 0; }
-
-.title-container {
-  position: absolute;
-  padding: 1rem 2em;
-  bottom: 90px; }
-
-.title-bg {
-  height: 600px;
-  background: #fff url("../images/factoryandpark.jpg") top center/cover no-repeat;
-  position: relative; }
-
-.text-box {
-  padding: 0 30px; }
+/*# sourceMappingURL=../../sass */
