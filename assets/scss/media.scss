@@ -1,0 +1,25 @@
+
+.chimney-image {
+  background: $colour_offwhite url("../images/factoryandpark.jpg") center center / cover no-repeat;
+}
+
+.path-image {
+  background: $colour_offwhite url("../images/path1.jpg") center center / cover no-repeat;
+}
+
+.pond-image {
+  background: $colour_offwhite url("../images/path2.jpg") center center / cover no-repeat;
+}
+
+.flowers-image {
+  background: $colour_offwhite url("../images/path3.jpg") center center / cover no-repeat;
+}
+
+.trees-image {
+  background: $colour_offwhite url("../images/path4.jpg") center center / cover no-repeat;
+}
+
+.grid-nav .grid-square:hover {
+  filter: grayscale(80%);
+  transition : -webkit-filter 500ms linear
+}

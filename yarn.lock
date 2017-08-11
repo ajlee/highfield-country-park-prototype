@@ -380,6 +380,10 @@ cryptiles@2.x.x:
   dependencies:
     boom "2.x.x"
 
+"cssgram@https://github.com/una/CSSgram.git":
+  version "0.1.12"
+  resolved "https://github.com/una/CSSgram.git#6f21810aa154db57ce9436fea4d2b0b816346d4d"
+
 ctype@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/ctype/-/ctype-0.5.2.tgz#fe8091d468a373a0b0c9ff8bbfb3425c00973a1d"

@@ -1,14 +1,16 @@
 /* bootstrap variables */
 /* element spacing */
 /* screen widths */
+/* images */
 /* bootstrap variables */
 /* element spacing */
 /* screen widths */
+/* images */
 /* line 6, assets/scss/layout.scss */
 .title-container {
   position: absolute;
-  padding: 1rem 2em;
-  bottom: 90px; }
+  padding: 7rem 1rem;
+  bottom: 30px; }
 
 /* line 12, assets/scss/layout.scss */
 .title-container-outer {
@@ -16,76 +18,87 @@
 
 /* line 16, assets/scss/layout.scss */
 .title-bg {
-  background: #fff url("../images/factoryandpark.jpg") top center/cover no-repeat;
   position: relative; }
 
-/* line 21, assets/scss/layout.scss */
+/* line 20, assets/scss/layout.scss */
+.title-bg-image {
+  min-height: 600px; }
+
+/* line 24, assets/scss/layout.scss */
 .text-box {
   padding: 0 30px; }
 
-/* line 25, assets/scss/layout.scss */
+/* line 28, assets/scss/layout.scss */
 .nav-text-column {
   background-color: #DEE1B6; }
 
 /*
  * main section
  */
-/* line 35, assets/scss/layout.scss */
-.main-content {
-  top: 61px; }
-  /* line 38, assets/scss/layout.scss */
-  .main-content .column {
-    height: 600px; }
+/* line 38, assets/scss/layout.scss */
+.main-content .column {
+  height: 600px; }
+
+/* line 43, assets/scss/layout.scss */
+.grid-gallery .grid-square {
+  min-height: 300px; }
 
 /* bootstrap variables */
 /* element spacing */
 /* screen widths */
+/* images */
 /* line 4, assets/scss/typography.scss */
 html, body {
   font-size: 18px; }
 
 /* line 8, assets/scss/typography.scss */
-h1, h2, h3, h4, h5, h6, nav {
+h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6, nav {
   font-family: Open Sans, Sans;
-  font-weight: 300; }
-  /* line 12, assets/scss/typography.scss */
-  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, nav small {
+  font-weight: 300;
+  color: #49281F;
+  text-shadow: 0px 0px 4px #fff; }
+  /* line 14, assets/scss/typography.scss */
+  h1 a, h2 a, h3 a, h4 a, nav.grid-nav .grid-nav-link a a, h5 a, h6 a, nav a {
+    color: inherit; }
+  /* line 18, assets/scss/typography.scss */
+  h1 small, h2 small, h3 small, h4 small, nav.grid-nav .grid-nav-link a small, h5 small, h6 small, nav small {
     font-weight: 800;
     color: inherit; }
 
 /* font sizes and line heights - use http://type-scale.com/ perfect fourth */
-/* line 20, assets/scss/typography.scss */
+/* line 26, assets/scss/typography.scss */
 h1 {
   font-size: 3.157rem; }
 
-/* line 26, assets/scss/typography.scss */
+/* line 32, assets/scss/typography.scss */
 h2 {
   font-size: 2.369rem; }
 
-/* line 30, assets/scss/typography.scss */
+/* line 36, assets/scss/typography.scss */
 h3 {
   font-size: 1.777rem; }
 
-/* line 34, assets/scss/typography.scss */
-h4 {
+/* line 40, assets/scss/typography.scss */
+h4, nav.grid-nav .grid-nav-link a {
   font-size: 1.5rem; }
 
-/* line 38, assets/scss/typography.scss */
+/* line 44, assets/scss/typography.scss */
 p {
   font-family: Lora, Georgia; }
 
-/* line 42, assets/scss/typography.scss */
+/* line 48, assets/scss/typography.scss */
 p {
   color: #564334;
   font-size: 1rem;
   line-height: 1.5rem; }
 
-/* line 48, assets/scss/typography.scss */
+/* line 54, assets/scss/typography.scss */
 h1.title {
+  letter-spacing: -3px;
   bottom: 0;
   color: #fff;
-  text-shadow: 3px 3px 8px #000; }
-  /* line 53, assets/scss/typography.scss */
+  text-shadow: 1px 1px 2px #3B3717, 0 0 4px rgba(255, 255, 255, 0.3); }
+  /* line 60, assets/scss/typography.scss */
   h1.title small {
     display: block;
     padding: 1.5rem 0; }
@@ -93,6 +106,7 @@ h1.title {
 /* bootstrap variables */
 /* element spacing */
 /* screen widths */
+/* images */
 /* line 4, assets/scss/nav.scss */
 .header-fixed {
   background-color: #9E9A41;
@@ -133,5 +147,57 @@ nav.primary li:hover a span:after {
   left: 0;
   bottom: -15px;
   border-bottom: 1px solid red; }
+
+/* line 47, assets/scss/nav.scss */
+nav.grid-nav .grid-square {
+  position: relative; }
+  /* line 50, assets/scss/nav.scss */
+  nav.grid-nav .grid-square:hover a {
+    text-decoration: underline; }
+
+/* line 55, assets/scss/nav.scss */
+nav.grid-nav .grid-nav-link {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%; }
+  /* line 61, assets/scss/nav.scss */
+  nav.grid-nav .grid-nav-link a {
+    position: relative;
+    left: -50%;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+/* line 2, assets/scss/media.scss */
+.chimney-image {
+  background: #CFB590 url("../images/factoryandpark.jpg") center center/cover no-repeat; }
+
+/* line 6, assets/scss/media.scss */
+.path-image {
+  background: #CFB590 url("../images/path1.jpg") center center/cover no-repeat; }
+
+/* line 10, assets/scss/media.scss */
+.pond-image {
+  background: #CFB590 url("../images/path2.jpg") center center/cover no-repeat; }
+
+/* line 14, assets/scss/media.scss */
+.flowers-image {
+  background: #CFB590 url("../images/path3.jpg") center center/cover no-repeat; }
+
+/* line 18, assets/scss/media.scss */
+.trees-image {
+  background: #CFB590 url("../images/path4.jpg") center center/cover no-repeat; }
+
+/* line 22, assets/scss/media.scss */
+.grid-nav .grid-square:hover {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  transition: -webkit-filter 500ms linear; }
 
 /*# sourceMappingURL=../../sass */

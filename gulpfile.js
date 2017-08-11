@@ -39,3 +39,9 @@ gulp.task('watch', function() {
     gulp.run('sass');
   })
 });
+
+gulp.task('vendor', function () {
+  gulp.src(['./node_modules/cssgram/source/css/*.css'])
+    .pipe(gulp.dest('./assets/vendor/cssgram'));
+  });
+

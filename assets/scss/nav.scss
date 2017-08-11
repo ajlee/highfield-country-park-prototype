@@ -41,3 +41,35 @@ nav.primary li:hover a span:after {
     bottom: -$spacing;
     border-bottom: 1px solid red;
 }
+
+nav.grid-nav {
+
+  .grid-square {
+    position: relative;
+
+    &:hover a {
+      text-decoration: underline;
+    }
+  }
+
+  .grid-nav-link {
+    position: absolute;
+    left:50%;
+    bottom:0;
+    width:100%;
+
+    a {
+      @extend h4;
+      position: relative;
+      left:-50%;
+      width:100%;
+      margin:auto;
+      color:#fff;
+      padding:0.5rem;
+      display: block;
+      text-align: center;
+      background-color: rgba(0,0,0,0.6);
+      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+  }
+}
