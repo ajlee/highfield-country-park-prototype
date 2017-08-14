@@ -1,47 +1,6 @@
 @import "variables.scss";
 @import "colours.scss";
 
-.header-fixed {
-  background-color: $colour_main_light;
-  height: 60px;
-  border-bottom: 1px solid $colour_second;
-}
-
-nav.primary ul {
-  padding:0;
-  margin:0;
-  list-style: none;
-}
-
-nav.primary li {
-  position: relative;
-  display:inline-block;
-  text-align: center;
-  padding:1rem;
-  margin:0;
-}
-
-nav.primary a {
-  position:relative;
-  color:$colour_second;
-  text-decoration: none;
-  font-weight:500;
-}
-
-nav.primary li:hover a {
-  color:#222;
-  text-shadow:0 0 2px #dedede;
-}
-
-nav.primary li:hover a span:after {
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -$spacing;
-    border-bottom: 1px solid red;
-}
-
 nav.grid-nav {
 
   .grid-square {
@@ -69,7 +28,7 @@ nav.grid-nav {
       display: block;
       text-align: center;
       background-color: rgba(0,0,0,0.6);
-      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+      text-shadow: $general_text_shadow;
     }
   }
 }

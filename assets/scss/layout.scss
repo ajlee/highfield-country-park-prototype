@@ -1,12 +1,11 @@
 @import "variables.scss";
 @import "colours.scss";
 
-
-
 .title-container {
   position:absolute;
-  padding:7rem 1rem;
-  bottom:$spacing*2;
+  left:-$grid-gutter-width/2;
+  width:100%;
+  bottom:$homepage_main_image_height/3;
 }
 
 .title-container-outer {
@@ -18,15 +17,7 @@
 }
 
 .title-bg-image {
-  min-height: 600px;
-}
-
-.text-box {
-  padding:0 $spacing*2;
-}
-
-.nav-text-column {
-  background-color: $colour_skyblue;
+  min-height: $homepage_main_image_height;
 }
 
 
@@ -36,10 +27,10 @@
 .main-content {
 
   .column {
-    height:$first_image_height;
+    height:$homepage_main_image_height;
   }
 }
 
 .grid-gallery .grid-square {
-  min-height: $first-image-height/2;
+  min-height: $homepage_main_image_height/2;
 }

@@ -1,25 +1,31 @@
 
 .chimney-image {
-  background: $colour_offwhite url("../images/factoryandpark.jpg") center center / cover no-repeat;
+  background: $colour_offwhite url("../images/factoryandpark.jpg") $centre_bg_shorthand;
 }
 
-.path-image {
-  background: $colour_offwhite url("../images/path1.jpg") center center / cover no-repeat;
+.path1-image {
+  background: $colour_offwhite url("../images/path1.jpg") $centre_bg_shorthand;
 }
 
-.pond-image {
-  background: $colour_offwhite url("../images/path2.jpg") center center / cover no-repeat;
+.path2-image {
+  background: $colour_offwhite url("../images/path2.jpg") $centre_bg_shorthand;
 }
 
-.flowers-image {
-  background: $colour_offwhite url("../images/path3.jpg") center center / cover no-repeat;
+.path3-image {
+  background: $colour_offwhite url("../images/path3.jpg") $centre_bg_shorthand;
 }
 
-.trees-image {
-  background: $colour_offwhite url("../images/path4.jpg") center center / cover no-repeat;
+.path4-image {
+  background: $colour_offwhite url("../images/path4.jpg") $centre_bg_shorthand;
+}
+
+
+.grid-nav .grid-square {
+  filter: grayscale(55%);
 }
 
 .grid-nav .grid-square:hover {
-  filter: grayscale(80%);
-  transition : -webkit-filter 500ms linear
+  filter: grayscale(0%);
+  background-size:105%;
+  transition: $general_transition;
 }

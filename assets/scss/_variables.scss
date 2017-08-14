@@ -1,0 +1,32 @@
+@import "../vendor/bootstrap/bootstrap-custom";
+
+/* bootstrap variables */
+$grid-gutter: 15px;
+$screen-gutter: 15px;
+
+/* element spacing */
+$spacing: 15px;
+
+/* screen widths */
+
+
+/* type */
+$base_font_size: 18px;
+$font_open_sans: Open Sans, Sans;
+$font_lora: Lora, Georgia;
+$font_weight_bold: 800;
+$font_weight_normal: 500;
+$font_weight_light: 300;
+$general_text_shadow: 0 0 10px rgba(0,0,0,0.5);
+
+
+/* images */
+$homepage_main_image_height: 550px;
+$centre_bg_shorthand: center center / cover no-repeat;
+
+/* transitions */
+$general_transition: all 1s ease;
+
+/* other */
+$opacity_low: 0.3
+

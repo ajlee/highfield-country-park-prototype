@@ -7,10 +7,11 @@ var rename = require("gulp-rename");
 
 // Compile sass files
 gulp.task('sass', function () {
+  gulp.run('bootstrap');
   gulp.src('./assets/scss/styles.scss')
     .pipe(sass({errLogToConsole: true, sourceComments: 'map', sourceMap: 'sass'}))
   	.pipe(autoprefixer({
-  	    browsers: ['last 6 versions'],
+  	    browsers: ['last 2 versions'],
   	    cascade: false
   	}))
   	.pipe(concat('styles.css'))
@@ -43,5 +44,18 @@ gulp.task('watch', function() {
 gulp.task('vendor', function () {
   gulp.src(['./node_modules/cssgram/source/css/*.css'])
     .pipe(gulp.dest('./assets/vendor/cssgram'));
+  gulp.src(['./node_modules/bootstrap-sass/assets/stylesheets/**/*.scss'])
+    .pipe(gulp.dest('./assets/vendor/bootstrap/'));
   });
 
+
+gulp.task('bootstrap', function () {
+  gulp.src('./assets/vendor/bootstrap/bootstrap-custom.scss')
+    .pipe(sass({errLogToConsole: true, sourceComments: 'map', sourceMap: 'sass'}))
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
+    .pipe(concat('bootstrap.css'))
+    .pipe(gulp.dest('./assets/css/'));
+});
