@@ -3303,14 +3303,12 @@ th {
   /* line 57, assets/vendor/bootstrap/bootstrap/_print.scss */
   p,
   h2,
-  h3,
-  nav.grid-nav .grid-nav-link a {
+  h3 {
     orphans: 3;
     widows: 3; }
   /* line 64, assets/vendor/bootstrap/bootstrap/_print.scss */
   h2,
-  h3,
-  nav.grid-nav .grid-nav-link a {
+  h3 {
     page-break-after: avoid; }
   /* line 72, assets/vendor/bootstrap/bootstrap/_print.scss */
   .navbar {
@@ -4513,7 +4511,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
+h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -4522,9 +4520,9 @@ h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
   /* line 16, assets/vendor/bootstrap/bootstrap/_type.scss */
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
-  h2 .small, h3 small, nav.grid-nav .grid-nav-link a small, h3 footer, nav.grid-nav .grid-nav-link a footer,
-  h3 .small, nav.grid-nav .grid-nav-link a .small, h4 small, h4 footer,
-  h4 .small, h5 small, h5 footer,
+  h2 .small, h3 small, h3 footer,
+  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
+  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -4542,8 +4540,7 @@ h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
 /* line 24, assets/vendor/bootstrap/bootstrap/_type.scss */
 h1, .h1,
 h2, .h2,
-h3,
-nav.grid-nav .grid-nav-link a, .h3 {
+h3, .h3 {
   margin-top: 25px;
   margin-bottom: 12.5px; }
   /* line 30, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -4554,21 +4551,21 @@ nav.grid-nav .grid-nav-link a, .h3 {
   h2 footer,
   h2 .small, .h2 small, .h2 footer,
   .h2 .small,
-  h3 small, nav.grid-nav .grid-nav-link a small,
-  h3 footer, nav.grid-nav .grid-nav-link a footer,
-  h3 .small, nav.grid-nav .grid-nav-link a .small, .h3 small, .h3 footer,
+  h3 small,
+  h3 footer,
+  h3 .small, .h3 small, .h3 footer,
   .h3 .small {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, .h4,
+h4, nav.grid-nav .grid-nav-link a, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, h4 footer,
-  h4 .small, .h4 small, .h4 footer,
+  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
+  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -4589,16 +4586,16 @@ h2, .h2 {
   font-size: 42px; }
 
 /* line 49, assets/vendor/bootstrap/bootstrap/_type.scss */
-h3, nav.grid-nav .grid-nav-link a, .h3 {
+h3, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, .h4 {
-  font-size: 18px; }
+h4, nav.grid-nav .grid-nav-link a, .h4 {
+  font-size: 24px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
 h5, .h5 {
-  font-size: 24px; }
+  font-size: 20px; }
 
 /* line 52, assets/vendor/bootstrap/bootstrap/_type.scss */
 h6, .h6 {
@@ -7637,14 +7634,12 @@ th {
   /* line 57, assets/vendor/bootstrap/bootstrap/_print.scss */
   p,
   h2,
-  h3,
-  nav.grid-nav .grid-nav-link a {
+  h3 {
     orphans: 3;
     widows: 3; }
   /* line 64, assets/vendor/bootstrap/bootstrap/_print.scss */
   h2,
-  h3,
-  nav.grid-nav .grid-nav-link a {
+  h3 {
     page-break-after: avoid; }
   /* line 72, assets/vendor/bootstrap/bootstrap/_print.scss */
   .navbar {
@@ -8847,7 +8842,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
+h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -8856,9 +8851,9 @@ h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
   /* line 16, assets/vendor/bootstrap/bootstrap/_type.scss */
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
-  h2 .small, h3 small, nav.grid-nav .grid-nav-link a small, h3 footer, nav.grid-nav .grid-nav-link a footer,
-  h3 .small, nav.grid-nav .grid-nav-link a .small, h4 small, h4 footer,
-  h4 .small, h5 small, h5 footer,
+  h2 .small, h3 small, h3 footer,
+  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
+  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -8876,8 +8871,7 @@ h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
 /* line 24, assets/vendor/bootstrap/bootstrap/_type.scss */
 h1, .h1,
 h2, .h2,
-h3,
-nav.grid-nav .grid-nav-link a, .h3 {
+h3, .h3 {
   margin-top: 25px;
   margin-bottom: 12.5px; }
   /* line 30, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -8888,21 +8882,21 @@ nav.grid-nav .grid-nav-link a, .h3 {
   h2 footer,
   h2 .small, .h2 small, .h2 footer,
   .h2 .small,
-  h3 small, nav.grid-nav .grid-nav-link a small,
-  h3 footer, nav.grid-nav .grid-nav-link a footer,
-  h3 .small, nav.grid-nav .grid-nav-link a .small, .h3 small, .h3 footer,
+  h3 small,
+  h3 footer,
+  h3 .small, .h3 small, .h3 footer,
   .h3 .small {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, .h4,
+h4, nav.grid-nav .grid-nav-link a, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, h4 footer,
-  h4 .small, .h4 small, .h4 footer,
+  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
+  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -8923,16 +8917,16 @@ h2, .h2 {
   font-size: 42px; }
 
 /* line 49, assets/vendor/bootstrap/bootstrap/_type.scss */
-h3, nav.grid-nav .grid-nav-link a, .h3 {
+h3, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, .h4 {
-  font-size: 18px; }
+h4, nav.grid-nav .grid-nav-link a, .h4 {
+  font-size: 24px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
 h5, .h5 {
-  font-size: 24px; }
+  font-size: 20px; }
 
 /* line 52, assets/vendor/bootstrap/bootstrap/_type.scss */
 h6, .h6 {
@@ -11707,35 +11701,65 @@ input[type="button"].btn-block {
   position: absolute;
   left: -15px;
   width: 100%;
-  bottom: 183.33333px; }
+  bottom: 6px; }
+  @media (min-width: 768px) {
+    /* line 4, assets/scss/layout.scss */
+    .title-container {
+      bottom: 183.33333px; } }
 
-/* line 11, assets/scss/layout.scss */
+/* line 15, assets/scss/layout.scss */
 .title-container-outer {
   min-width: 100%; }
 
-/* line 15, assets/scss/layout.scss */
+/* line 19, assets/scss/layout.scss */
 .title-bg {
   position: relative; }
 
-/* line 19, assets/scss/layout.scss */
+/* line 23, assets/scss/layout.scss */
 .title-bg-image {
-  min-height: 550px; }
+  min-height: 350px; }
+  @media (min-width: 768px) {
+    /* line 23, assets/scss/layout.scss */
+    .title-bg-image {
+      min-height: 550px; } }
+
+/* line 32, assets/scss/layout.scss */
+.title {
+  position: relative;
+  left: 15px;
+  padding: 15px; }
 
 /*
  * main section
  */
-/* line 29, assets/scss/layout.scss */
+/* line 43, assets/scss/layout.scss */
 .main-content .column {
-  height: 550px; }
+  min-height: 350px; }
+  @media (min-width: 768px) {
+    /* line 43, assets/scss/layout.scss */
+    .main-content .column {
+      min-height: 550px; } }
 
-/* line 34, assets/scss/layout.scss */
+/* line 52, assets/scss/layout.scss */
 .grid-gallery .grid-square {
-  min-height: 275px; }
+  min-height: 175px; }
+  @media (min-width: 768px) {
+    /* line 52, assets/scss/layout.scss */
+    .grid-gallery .grid-square {
+      min-height: 275px; } }
 
-/* line 38, assets/scss/layout.scss */
+/* line 60, assets/scss/layout.scss */
 footer {
   margin-top: 36px;
   padding: 36px 0; }
+
+@media (max-width: 768px) and (orientation: portrait) {
+  /* line 73, assets/scss/layout.scss */
+  .col-xs-portrait-6 {
+    width: 50% !important; }
+  /* line 76, assets/scss/layout.scss */
+  .col-xs-portrait-12 {
+    width: 100% !important; } }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -12006,14 +12030,12 @@ th {
   /* line 57, assets/vendor/bootstrap/bootstrap/_print.scss */
   p,
   h2,
-  h3,
-  nav.grid-nav .grid-nav-link a {
+  h3 {
     orphans: 3;
     widows: 3; }
   /* line 64, assets/vendor/bootstrap/bootstrap/_print.scss */
   h2,
-  h3,
-  nav.grid-nav .grid-nav-link a {
+  h3 {
     page-break-after: avoid; }
   /* line 72, assets/vendor/bootstrap/bootstrap/_print.scss */
   .navbar {
@@ -13216,7 +13238,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
+h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -13225,9 +13247,9 @@ h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
   /* line 16, assets/vendor/bootstrap/bootstrap/_type.scss */
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
-  h2 .small, h3 small, nav.grid-nav .grid-nav-link a small, h3 footer, nav.grid-nav .grid-nav-link a footer,
-  h3 .small, nav.grid-nav .grid-nav-link a .small, h4 small, h4 footer,
-  h4 .small, h5 small, h5 footer,
+  h2 .small, h3 small, h3 footer,
+  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
+  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -13245,8 +13267,7 @@ h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
 /* line 24, assets/vendor/bootstrap/bootstrap/_type.scss */
 h1, .h1,
 h2, .h2,
-h3,
-nav.grid-nav .grid-nav-link a, .h3 {
+h3, .h3 {
   margin-top: 25px;
   margin-bottom: 12.5px; }
   /* line 30, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -13257,21 +13278,21 @@ nav.grid-nav .grid-nav-link a, .h3 {
   h2 footer,
   h2 .small, .h2 small, .h2 footer,
   .h2 .small,
-  h3 small, nav.grid-nav .grid-nav-link a small,
-  h3 footer, nav.grid-nav .grid-nav-link a footer,
-  h3 .small, nav.grid-nav .grid-nav-link a .small, .h3 small, .h3 footer,
+  h3 small,
+  h3 footer,
+  h3 .small, .h3 small, .h3 footer,
   .h3 .small {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, .h4,
+h4, nav.grid-nav .grid-nav-link a, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, h4 footer,
-  h4 .small, .h4 small, .h4 footer,
+  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
+  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -13292,16 +13313,16 @@ h2, .h2 {
   font-size: 42px; }
 
 /* line 49, assets/vendor/bootstrap/bootstrap/_type.scss */
-h3, nav.grid-nav .grid-nav-link a, .h3 {
+h3, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, .h4 {
-  font-size: 18px; }
+h4, nav.grid-nav .grid-nav-link a, .h4 {
+  font-size: 24px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
 h5, .h5 {
-  font-size: 24px; }
+  font-size: 20px; }
 
 /* line 52, assets/vendor/bootstrap/bootstrap/_type.scss */
 h6, .h6 {
@@ -16081,12 +16102,8 @@ h1.title {
   bottom: 0;
   color: #FFF;
   text-shadow: 1px 1px 2px #9E9A41, 0 0 4px rgba(255, 255, 255, 0.7); }
-  /* line 14, assets/scss/typography.scss */
-  h1.title small, h1.title footer {
-    display: block;
-    padding: 1.5rem 0; }
 
-/* line 20, assets/scss/typography.scss */
+/* line 15, assets/scss/typography.scss */
 .eyebrow {
   margin: 12px; }
 
@@ -16359,14 +16376,12 @@ th {
   /* line 57, assets/vendor/bootstrap/bootstrap/_print.scss */
   p,
   h2,
-  h3,
-  nav.grid-nav .grid-nav-link a {
+  h3 {
     orphans: 3;
     widows: 3; }
   /* line 64, assets/vendor/bootstrap/bootstrap/_print.scss */
   h2,
-  h3,
-  nav.grid-nav .grid-nav-link a {
+  h3 {
     page-break-after: avoid; }
   /* line 72, assets/vendor/bootstrap/bootstrap/_print.scss */
   .navbar {
@@ -17569,7 +17584,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
+h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -17578,9 +17593,9 @@ h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
   /* line 16, assets/vendor/bootstrap/bootstrap/_type.scss */
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
-  h2 .small, h3 small, nav.grid-nav .grid-nav-link a small, h3 footer, nav.grid-nav .grid-nav-link a footer,
-  h3 .small, nav.grid-nav .grid-nav-link a .small, h4 small, h4 footer,
-  h4 .small, h5 small, h5 footer,
+  h2 .small, h3 small, h3 footer,
+  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
+  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -17598,8 +17613,7 @@ h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
 /* line 24, assets/vendor/bootstrap/bootstrap/_type.scss */
 h1, .h1,
 h2, .h2,
-h3,
-nav.grid-nav .grid-nav-link a, .h3 {
+h3, .h3 {
   margin-top: 25px;
   margin-bottom: 12.5px; }
   /* line 30, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -17610,21 +17624,21 @@ nav.grid-nav .grid-nav-link a, .h3 {
   h2 footer,
   h2 .small, .h2 small, .h2 footer,
   .h2 .small,
-  h3 small, nav.grid-nav .grid-nav-link a small,
-  h3 footer, nav.grid-nav .grid-nav-link a footer,
-  h3 .small, nav.grid-nav .grid-nav-link a .small, .h3 small, .h3 footer,
+  h3 small,
+  h3 footer,
+  h3 .small, .h3 small, .h3 footer,
   .h3 .small {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, .h4,
+h4, nav.grid-nav .grid-nav-link a, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, h4 footer,
-  h4 .small, .h4 small, .h4 footer,
+  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
+  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -17645,16 +17659,16 @@ h2, .h2 {
   font-size: 42px; }
 
 /* line 49, assets/vendor/bootstrap/bootstrap/_type.scss */
-h3, nav.grid-nav .grid-nav-link a, .h3 {
+h3, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, .h4 {
-  font-size: 18px; }
+h4, nav.grid-nav .grid-nav-link a, .h4 {
+  font-size: 24px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
 h5, .h5 {
-  font-size: 24px; }
+  font-size: 20px; }
 
 /* line 52, assets/vendor/bootstrap/bootstrap/_type.scss */
 h6, .h6 {
@@ -20435,45 +20449,55 @@ nav.grid-nav .grid-square {
 nav.grid-nav .grid-nav-link {
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: 0;
   width: 100%; }
   /* line 20, assets/scss/nav.scss */
   nav.grid-nav .grid-nav-link a {
     position: relative;
     left: -50%;
     width: 100%;
+    min-height: 2.4em;
     margin: auto;
-    color: #fff;
-    padding: 0.5rem;
+    color: #3B3717;
     display: block;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+    /* line 34, assets/scss/nav.scss */
+    nav.grid-nav .grid-nav-link a span {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      width: 100%;
+      padding-bottom: 12px; }
 
-/* line 36, assets/scss/nav.scss */
+/* line 45, assets/scss/nav.scss */
 footer {
   background-color: #758918; }
-  /* line 39, assets/scss/nav.scss */
+  /* line 48, assets/scss/nav.scss */
   footer .nav > li > a {
     color: #FFF;
     text-align: center; }
-    /* line 43, assets/scss/nav.scss */
+    /* line 52, assets/scss/nav.scss */
     footer .nav > li > a:hover {
       background-color: transparent;
       text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
-  /* line 49, assets/scss/nav.scss */
+  /* line 58, assets/scss/nav.scss */
   footer .social.nav {
     text-align: center; }
-    /* line 52, assets/scss/nav.scss */
+    /* line 61, assets/scss/nav.scss */
     footer .social.nav li {
       padding-top: 12px;
       display: inline-block; }
-      /* line 56, assets/scss/nav.scss */
+      /* line 65, assets/scss/nav.scss */
       footer .social.nav li a {
         color: #49281F;
         font-size: 2rem;
         font-weight: 800; }
-        /* line 62, assets/scss/nav.scss */
+        /* line 71, assets/scss/nav.scss */
         footer .social.nav li a:hover {
           background-color: transparent;
           text-shadow: none;
@@ -20499,17 +20523,17 @@ footer {
 .path4-image {
   background: #EFEFEF url("../images/path4.jpg") center center/cover no-repeat; }
 
-/* line 23, assets/scss/media.scss */
-.grid-nav .grid-square {
-  -webkit-filter: grayscale(55%);
-  filter: grayscale(55%); }
-
-/* line 27, assets/scss/media.scss */
-.grid-nav .grid-square:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-  background-size: 105%;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease; }
+@media (min-width: 1200px) {
+  /* line 24, assets/scss/media.scss */
+  .grid-nav .grid-square {
+    -webkit-filter: grayscale(55%);
+    filter: grayscale(55%); }
+  /* line 28, assets/scss/media.scss */
+  .grid-nav .grid-square:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    background-size: 105%;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; } }
 
 /*# sourceMappingURL=../../sass */

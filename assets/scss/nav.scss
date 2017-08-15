@@ -14,21 +14,30 @@ nav.grid-nav {
   .grid-nav-link {
     position: absolute;
     left:50%;
-    bottom:0;
+    top:0;
     width:100%;
 
     a {
-      @extend h3;
+      @extend h4;
       position: relative;
       left:-50%;
       width:100%;
+      min-height: 2.4em;
       margin:auto;
-      color:#fff;
-      padding:0.5rem;
+      color:$colour_main_dark;
       display: block;
       text-align: center;
       background-color: rgba(0,0,0,0.6);
       text-shadow: $general_text_shadow;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.6) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+      span {
+        position: absolute;
+        display:block;
+        bottom:0;
+        width:100%;
+        padding-bottom:$padding-base-vertical*2;
+      }
     }
   }
 }

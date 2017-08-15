@@ -20,12 +20,14 @@
 }
 
 
-.grid-nav .grid-square {
-  filter: grayscale(55%);
-}
+@media (min-width: $screen-lg) {
+  .grid-nav .grid-square {
+    filter: grayscale(55%);
+  }
 
-.grid-nav .grid-square:hover {
-  filter: grayscale(0%);
-  background-size:105%;
-  transition: $general_transition;
+  .grid-nav .grid-square:hover {
+    filter: grayscale(0%);
+    background-size:105%;
+    transition: $general_transition;
+  }
 }
