@@ -3303,12 +3303,14 @@ th {
   /* line 57, assets/vendor/bootstrap/bootstrap/_print.scss */
   p,
   h2,
-  h3 {
+  h3,
+  nav.grid-nav .grid-nav-link a {
     orphans: 3;
     widows: 3; }
   /* line 64, assets/vendor/bootstrap/bootstrap/_print.scss */
   h2,
-  h3 {
+  h3,
+  nav.grid-nav .grid-nav-link a {
     page-break-after: avoid; }
   /* line 72, assets/vendor/bootstrap/bootstrap/_print.scss */
   .navbar {
@@ -4511,7 +4513,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
+h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -4520,9 +4522,9 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
   /* line 16, assets/vendor/bootstrap/bootstrap/_type.scss */
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
-  h2 .small, h3 small, h3 footer,
-  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
+  h2 .small, h3 small, nav.grid-nav .grid-nav-link a small, h3 footer, nav.grid-nav .grid-nav-link a footer,
+  h3 .small, nav.grid-nav .grid-nav-link a .small, h4 small, h4 footer,
+  h4 .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -4540,7 +4542,8 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
 /* line 24, assets/vendor/bootstrap/bootstrap/_type.scss */
 h1, .h1,
 h2, .h2,
-h3, .h3 {
+h3,
+nav.grid-nav .grid-nav-link a, .h3 {
   margin-top: 25px;
   margin-bottom: 12.5px; }
   /* line 30, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -4551,21 +4554,21 @@ h3, .h3 {
   h2 footer,
   h2 .small, .h2 small, .h2 footer,
   .h2 .small,
-  h3 small,
-  h3 footer,
-  h3 .small, .h3 small, .h3 footer,
+  h3 small, nav.grid-nav .grid-nav-link a small,
+  h3 footer, nav.grid-nav .grid-nav-link a footer,
+  h3 .small, nav.grid-nav .grid-nav-link a .small, .h3 small, .h3 footer,
   .h3 .small {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4,
+h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
+  h4 small, h4 footer,
+  h4 .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -4586,11 +4589,11 @@ h2, .h2 {
   font-size: 42px; }
 
 /* line 49, assets/vendor/bootstrap/bootstrap/_type.scss */
-h3, .h3 {
+h3, nav.grid-nav .grid-nav-link a, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4 {
+h4, .h4 {
   font-size: 18px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -7634,12 +7637,14 @@ th {
   /* line 57, assets/vendor/bootstrap/bootstrap/_print.scss */
   p,
   h2,
-  h3 {
+  h3,
+  nav.grid-nav .grid-nav-link a {
     orphans: 3;
     widows: 3; }
   /* line 64, assets/vendor/bootstrap/bootstrap/_print.scss */
   h2,
-  h3 {
+  h3,
+  nav.grid-nav .grid-nav-link a {
     page-break-after: avoid; }
   /* line 72, assets/vendor/bootstrap/bootstrap/_print.scss */
   .navbar {
@@ -8842,7 +8847,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
+h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -8851,9 +8856,9 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
   /* line 16, assets/vendor/bootstrap/bootstrap/_type.scss */
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
-  h2 .small, h3 small, h3 footer,
-  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
+  h2 .small, h3 small, nav.grid-nav .grid-nav-link a small, h3 footer, nav.grid-nav .grid-nav-link a footer,
+  h3 .small, nav.grid-nav .grid-nav-link a .small, h4 small, h4 footer,
+  h4 .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -8871,7 +8876,8 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
 /* line 24, assets/vendor/bootstrap/bootstrap/_type.scss */
 h1, .h1,
 h2, .h2,
-h3, .h3 {
+h3,
+nav.grid-nav .grid-nav-link a, .h3 {
   margin-top: 25px;
   margin-bottom: 12.5px; }
   /* line 30, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -8882,21 +8888,21 @@ h3, .h3 {
   h2 footer,
   h2 .small, .h2 small, .h2 footer,
   .h2 .small,
-  h3 small,
-  h3 footer,
-  h3 .small, .h3 small, .h3 footer,
+  h3 small, nav.grid-nav .grid-nav-link a small,
+  h3 footer, nav.grid-nav .grid-nav-link a footer,
+  h3 .small, nav.grid-nav .grid-nav-link a .small, .h3 small, .h3 footer,
   .h3 .small {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4,
+h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
+  h4 small, h4 footer,
+  h4 .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -8917,11 +8923,11 @@ h2, .h2 {
   font-size: 42px; }
 
 /* line 49, assets/vendor/bootstrap/bootstrap/_type.scss */
-h3, .h3 {
+h3, nav.grid-nav .grid-nav-link a, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4 {
+h4, .h4 {
   font-size: 18px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -12000,12 +12006,14 @@ th {
   /* line 57, assets/vendor/bootstrap/bootstrap/_print.scss */
   p,
   h2,
-  h3 {
+  h3,
+  nav.grid-nav .grid-nav-link a {
     orphans: 3;
     widows: 3; }
   /* line 64, assets/vendor/bootstrap/bootstrap/_print.scss */
   h2,
-  h3 {
+  h3,
+  nav.grid-nav .grid-nav-link a {
     page-break-after: avoid; }
   /* line 72, assets/vendor/bootstrap/bootstrap/_print.scss */
   .navbar {
@@ -13208,7 +13216,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
+h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -13217,9 +13225,9 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
   /* line 16, assets/vendor/bootstrap/bootstrap/_type.scss */
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
-  h2 .small, h3 small, h3 footer,
-  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
+  h2 .small, h3 small, nav.grid-nav .grid-nav-link a small, h3 footer, nav.grid-nav .grid-nav-link a footer,
+  h3 .small, nav.grid-nav .grid-nav-link a .small, h4 small, h4 footer,
+  h4 .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -13237,7 +13245,8 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
 /* line 24, assets/vendor/bootstrap/bootstrap/_type.scss */
 h1, .h1,
 h2, .h2,
-h3, .h3 {
+h3,
+nav.grid-nav .grid-nav-link a, .h3 {
   margin-top: 25px;
   margin-bottom: 12.5px; }
   /* line 30, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -13248,21 +13257,21 @@ h3, .h3 {
   h2 footer,
   h2 .small, .h2 small, .h2 footer,
   .h2 .small,
-  h3 small,
-  h3 footer,
-  h3 .small, .h3 small, .h3 footer,
+  h3 small, nav.grid-nav .grid-nav-link a small,
+  h3 footer, nav.grid-nav .grid-nav-link a footer,
+  h3 .small, nav.grid-nav .grid-nav-link a .small, .h3 small, .h3 footer,
   .h3 .small {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4,
+h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
+  h4 small, h4 footer,
+  h4 .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -13283,11 +13292,11 @@ h2, .h2 {
   font-size: 42px; }
 
 /* line 49, assets/vendor/bootstrap/bootstrap/_type.scss */
-h3, .h3 {
+h3, nav.grid-nav .grid-nav-link a, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4 {
+h4, .h4 {
   font-size: 18px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -16068,17 +16077,16 @@ p {
 
 /* line 8, assets/scss/typography.scss */
 h1.title {
-  letter-spacing: -3px;
   text-align: center;
   bottom: 0;
   color: #FFF;
   text-shadow: 1px 1px 2px #9E9A41, 0 0 4px rgba(255, 255, 255, 0.7); }
-  /* line 15, assets/scss/typography.scss */
+  /* line 14, assets/scss/typography.scss */
   h1.title small, h1.title footer {
     display: block;
     padding: 1.5rem 0; }
 
-/* line 21, assets/scss/typography.scss */
+/* line 20, assets/scss/typography.scss */
 .eyebrow {
   margin: 12px; }
 
@@ -16351,12 +16359,14 @@ th {
   /* line 57, assets/vendor/bootstrap/bootstrap/_print.scss */
   p,
   h2,
-  h3 {
+  h3,
+  nav.grid-nav .grid-nav-link a {
     orphans: 3;
     widows: 3; }
   /* line 64, assets/vendor/bootstrap/bootstrap/_print.scss */
   h2,
-  h3 {
+  h3,
+  nav.grid-nav .grid-nav-link a {
     page-break-after: avoid; }
   /* line 72, assets/vendor/bootstrap/bootstrap/_print.scss */
   .navbar {
@@ -17559,7 +17569,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
+h1, h2, h3, nav.grid-nav .grid-nav-link a, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -17568,9 +17578,9 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
   /* line 16, assets/vendor/bootstrap/bootstrap/_type.scss */
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
-  h2 .small, h3 small, h3 footer,
-  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
+  h2 .small, h3 small, nav.grid-nav .grid-nav-link a small, h3 footer, nav.grid-nav .grid-nav-link a footer,
+  h3 .small, nav.grid-nav .grid-nav-link a .small, h4 small, h4 footer,
+  h4 .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -17588,7 +17598,8 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
 /* line 24, assets/vendor/bootstrap/bootstrap/_type.scss */
 h1, .h1,
 h2, .h2,
-h3, .h3 {
+h3,
+nav.grid-nav .grid-nav-link a, .h3 {
   margin-top: 25px;
   margin-bottom: 12.5px; }
   /* line 30, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -17599,21 +17610,21 @@ h3, .h3 {
   h2 footer,
   h2 .small, .h2 small, .h2 footer,
   .h2 .small,
-  h3 small,
-  h3 footer,
-  h3 .small, .h3 small, .h3 footer,
+  h3 small, nav.grid-nav .grid-nav-link a small,
+  h3 footer, nav.grid-nav .grid-nav-link a footer,
+  h3 .small, nav.grid-nav .grid-nav-link a .small, .h3 small, .h3 footer,
   .h3 .small {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4,
+h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
+  h4 small, h4 footer,
+  h4 .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -17634,11 +17645,11 @@ h2, .h2 {
   font-size: 42px; }
 
 /* line 49, assets/vendor/bootstrap/bootstrap/_type.scss */
-h3, .h3 {
+h3, nav.grid-nav .grid-nav-link a, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4 {
+h4, .h4 {
   font-size: 18px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -20448,14 +20459,25 @@ footer {
     text-align: center; }
     /* line 43, assets/scss/nav.scss */
     footer .nav > li > a:hover {
-      background-color: transparent; }
-  /* line 48, assets/scss/nav.scss */
+      background-color: transparent;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+  /* line 49, assets/scss/nav.scss */
   footer .social.nav {
     text-align: center; }
-    /* line 51, assets/scss/nav.scss */
+    /* line 52, assets/scss/nav.scss */
     footer .social.nav li {
       padding-top: 12px;
       display: inline-block; }
+      /* line 56, assets/scss/nav.scss */
+      footer .social.nav li a {
+        color: #49281F;
+        font-size: 2rem;
+        font-weight: 800; }
+        /* line 62, assets/scss/nav.scss */
+        footer .social.nav li a:hover {
+          background-color: transparent;
+          text-shadow: none;
+          color: #564334; }
 
 /* line 2, assets/scss/media.scss */
 .chimney-image {

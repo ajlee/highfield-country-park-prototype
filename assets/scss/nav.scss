@@ -18,7 +18,7 @@ nav.grid-nav {
     width:100%;
 
     a {
-      @extend h4;
+      @extend h3;
       position: relative;
       left:-50%;
       width:100%;
@@ -42,6 +42,7 @@ footer {
 
     &:hover {
       background-color: transparent;
+      text-shadow: 0 0 10px $footer_hover_bg;
     }
   }
 
@@ -52,6 +53,18 @@ footer {
       padding-top:$padding-footer-social-top;
       display:inline-block;
 
+      a {
+
+        color:$colour_second;
+        font-size: 2rem;
+        font-weight: 800;
+
+        &:hover {
+          background-color: transparent;
+          text-shadow: none;
+          color:$colour_second_light;
+        }
+      }
     }
   }
 }
