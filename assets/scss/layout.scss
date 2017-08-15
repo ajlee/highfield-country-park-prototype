@@ -34,3 +34,8 @@
 .grid-gallery .grid-square {
   min-height: $homepage_main_image_height/2;
 }
+
+footer {
+  margin-top:$margin-footer-vertical;
+  padding: $padding-footer-vertical 0;
+}

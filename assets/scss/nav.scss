@@ -1,5 +1,5 @@
-@import "variables.scss";
-@import "colours.scss";
+@import "_variables.scss";
+@import "_colours.scss";
 
 nav.grid-nav {
 
@@ -32,3 +32,27 @@ nav.grid-nav {
     }
   }
 }
+
+footer {
+  background-color:$colour_main;
+
+  .nav > li > a {
+    color:$colour_white;
+    text-align:center;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .social.nav {
+    text-align:center;
+
+    li {
+      padding-top:$padding-footer-social-top;
+      display:inline-block;
+
+    }
+  }
+}
+

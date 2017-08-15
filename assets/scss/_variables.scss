@@ -5,7 +5,10 @@ $grid-gutter: 15px;
 $screen-gutter: 15px;
 
 /* element spacing */
-$spacing: 15px;
+
+$margin-footer-vertical: $padding-base-vertical*6;
+$padding-footer-vertical: $padding-base-vertical*6;
+$padding-footer-social-top: $padding-base-vertical*2;
 
 /* screen widths */
 

@@ -46,6 +46,10 @@ gulp.task('vendor', function () {
     .pipe(gulp.dest('./assets/vendor/cssgram'));
   gulp.src(['./node_modules/bootstrap-sass/assets/stylesheets/**/*.scss'])
     .pipe(gulp.dest('./assets/vendor/bootstrap/'));
+  gulp.src(['./node_modules/font-awesome-sass/assets/stylesheets/**/*.scss'])
+    .pipe(gulp.dest('./assets/vendor/font-awesome/scss'));
+  gulp.src(['./node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*'])
+    .pipe(gulp.dest('./assets/vendor/font-awesome/fonts'));
   });
 
 

@@ -21,3 +21,7 @@ h1.title {
 .eyebrow {
   margin:$padding-base-horizontal;
 }
+
+footer {
+  @extend small;
+}
