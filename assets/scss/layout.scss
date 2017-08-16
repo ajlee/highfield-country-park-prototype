@@ -29,6 +29,11 @@
   }
 }
 
+.title-bg-image.small {
+
+  min-height: 100px;
+}
+
 .title {
   position:relative;
   left:$grid-gutter-width/2;
@@ -51,6 +56,11 @@
   }
 }
 
+
+/* secondary pages nav */
+.linear-nav {
+  height:100px;
+}
 .grid-gallery .grid-square {
   min-height: $homepage_main_image_height_mobile/2;
 

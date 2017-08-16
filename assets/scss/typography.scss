@@ -1,8 +1,11 @@
 @import "variables.scss";
 @import "colours.scss";
 
-p {
+p, .body-content, .eyebrow {
+  font-family: $font-family-serif;
   color:$colour_second_light;
+  line-height: 1.7em;
+  letter-spacing: 0.05px;
 }
 
 h1.title {
@@ -12,8 +15,12 @@ h1.title {
   text-shadow: 1px 1px 2px $colour_main_light, 0 0 4px transparentize($colour_white, $opacity_low);;
 }
 
-.eyebrow {
-  margin:$padding-base-horizontal;
+h2 {
+  color:$colour_second;
+}
+article header h3 {
+  color:$colour_main;
+  text-shadow:0px 0px 1px $gray-lighter;
 }
 
 footer {

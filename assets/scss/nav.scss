@@ -38,6 +38,38 @@ nav.grid-nav {
   }
 }
 
+/* secondary pages nav */
+.linear-nav {
+  height:100px;
+
+  .linear-nav-image {
+    position:relative;
+    height:100px;
+    border-left:1px solid white;
+
+    a {
+      position:absolute;
+      left:0;
+      right:0;
+      display:block;
+      height:100%;
+      width:100%;
+      background-color: rgba(0,0,0,0.5);
+      color:white;
+      font-weight:800;
+      text-align:center;
+
+      span {
+        display:block;
+        padding-top:30px;
+      }
+    }
+    &.chimney-image {
+      text-shadow: 0 0 2px $colour_main_dark;
+    }
+  }
+}
+
 footer {
   background-color:transparent; /* colour also set in body - so that the colour continues off the page */
 
