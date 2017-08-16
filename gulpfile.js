@@ -4,6 +4,7 @@ var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 var clean = require('gulp-clean-css');
 var rename = require("gulp-rename");
+//var imageResize = require('gulp-image-resize'); /* todo: solve error - module not found error */
 
 // Compile sass files
 gulp.task('sass', function () {
@@ -63,3 +64,18 @@ gulp.task('bootstrap', function () {
     .pipe(concat('bootstrap.css'))
     .pipe(gulp.dest('./assets/css/'));
 });
+
+
+/* create responsive images - requires imagemagik and graphicsmagik */
+
+gulp.task('responsive-images', function () {
+  gulp.src(['assets/images/path1.jpg','assets/images/path2.jpg',
+    'assets/images/path3.jpg','assets/images/path4.jpg'])
+    .pipe(imageResize({
+      width : 250,
+      height : 300,
+      crop : true,
+      upscale : false
+    }))
+    .pipe(gulp.dest('assets/images/md'));
+  });

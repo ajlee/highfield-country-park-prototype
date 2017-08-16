@@ -7,9 +7,11 @@ $screen-gutter: 15px;
 
 /* element spacing */
 
-$margin-footer-vertical: $padding-base-vertical*6;
-$padding-footer-vertical: $padding-base-vertical*6;
-$padding-footer-social-top: $padding-base-vertical*2;
+
+$intro_content_padding_bottom: $padding-base-vertical*2; /* careful to be above the fold */
+$main_content_outer_container_top: $padding-base-vertical*2;
+$main_content_outer_container_bottom: $padding-base-vertical*10;
+$padding_footer-social_top: $padding-base-vertical*2;
 
 /* screen widths */
 
@@ -39,4 +41,14 @@ $grid_nav_text_padding: $padding-base-vertical*2;
 $grid_nav_font_size: $base_font_size*1.5;
 $grid_nav_blur_height: ($grid_nav_text_padding*2) + $grid_nav_font_size;
 
+// palette based on http://www.colourlovers.com/palette/680350/earthy
 
+$colour_white: #FFF;
+$colour_offwhite: #EFEFEF;
+$colour_beige: #CFB590;
+
+$colour_main_light: #9E9A41;
+$colour_main: #758918;
+$colour_main_dark: #3B3717;
+$colour_second_light: #564334;
+$colour_second: #49281F;

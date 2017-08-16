@@ -6,11 +6,6 @@ nav.grid-nav {
   .grid-square {
     position: relative;
     margin:0 -15px; /* expand back to edges of column */
-
-
-    &:hover a {
-      text-decoration: underline;
-    }
   }
 
 
@@ -28,6 +23,7 @@ nav.grid-nav {
     line-height: $grid_nav_font_size;
     text-shadow: $general_text_shadow;
 
+
     span {
       position: absolute;
       left:0;
@@ -35,11 +31,15 @@ nav.grid-nav {
       width:100%;
       padding-bottom:$grid_nav_text_padding;
     }
+
+    &:hover span {
+      text-decoration: underline;
+    }
   }
 }
 
 footer {
-  background-color:$colour_main;
+  background-color:transparent; /* colour also set in body - so that the colour continues off the page */
 
   .nav > li > a {
     color:$colour_white;

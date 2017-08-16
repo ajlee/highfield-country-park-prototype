@@ -6,32 +6,9 @@
 $colour_white: #FFF;
 $colour_offwhite: #EFEFEF;
 $colour_beige: #CFB590;
-$colour_grey_light: #B8ADB1;
-$colour_grey: #837B82;
-$colour_black: #000;
 
 $colour_main_light: #9E9A41;
 $colour_main: #758918;
 $colour_main_dark: #3B3717;
 $colour_second_light: #564334;
 $colour_second: #49281F;
-
-$colour_skyblue: #DEE1B6;
-
-
-//== Colors
-//
-//## Gray and brand colors for use across Bootstrap.
-
-$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
-
-$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;

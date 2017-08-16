@@ -7360,6 +7360,7 @@ input[type="button"].btn-block {
 
 /* bootstrap variables */
 /* element spacing */
+/* careful to be above the fold */
 /* screen widths */
 /* type */
 /* images */
@@ -11691,6 +11692,7 @@ input[type="button"].btn-block {
 
 /* bootstrap variables */
 /* element spacing */
+/* careful to be above the fold */
 /* screen widths */
 /* type */
 /* images */
@@ -11732,32 +11734,41 @@ input[type="button"].btn-block {
 /*
  * main section
  */
-/* line 43, assets/scss/layout.scss */
-.main-content .column {
-  min-height: 350px; }
-  @media (min-width: 768px) {
-    /* line 43, assets/scss/layout.scss */
-    .main-content .column {
-      min-height: 550px; } }
+/* line 41, assets/scss/layout.scss */
+.intro-content {
+  padding-bottom: 12px;
+  background-color: #758918; }
+  /* line 45, assets/scss/layout.scss */
+  .intro-content .column {
+    min-height: 350px; }
+    @media (min-width: 768px) {
+      /* line 45, assets/scss/layout.scss */
+      .intro-content .column {
+        min-height: 550px; } }
 
-/* line 52, assets/scss/layout.scss */
+/* line 54, assets/scss/layout.scss */
 .grid-gallery .grid-square {
   min-height: 175px; }
   @media (min-width: 768px) {
-    /* line 52, assets/scss/layout.scss */
+    /* line 54, assets/scss/layout.scss */
     .grid-gallery .grid-square {
       min-height: 275px; } }
 
-/* line 60, assets/scss/layout.scss */
+/* line 61, assets/scss/layout.scss */
+body .text-content-outer-container {
+  padding: 12px 0 60px 0; }
+
+/* line 65, assets/scss/layout.scss */
 footer {
-  margin-top: 36px;
-  padding: 36px 0; }
+  position: relative;
+  top: 1px;
+  /* solves a 1px border issue on the bottom of the footer */ }
 
 @media (max-width: 768px) and (orientation: portrait) {
-  /* line 73, assets/scss/layout.scss */
+  /* line 78, assets/scss/layout.scss */
   .col-xs-portrait-6 {
     width: 50% !important; }
-  /* line 76, assets/scss/layout.scss */
+  /* line 81, assets/scss/layout.scss */
   .col-xs-portrait-12 {
     width: 100% !important; } }
 
@@ -16087,6 +16098,7 @@ input[type="button"].btn-block {
 
 /* bootstrap variables */
 /* element spacing */
+/* careful to be above the fold */
 /* screen widths */
 /* type */
 /* images */
@@ -20433,6 +20445,7 @@ input[type="button"].btn-block {
 
 /* bootstrap variables */
 /* element spacing */
+/* careful to be above the fold */
 /* screen widths */
 /* type */
 /* images */
@@ -20443,11 +20456,8 @@ nav.grid-nav .grid-square {
   position: relative;
   margin: 0 -15px;
   /* expand back to edges of column */ }
-  /* line 11, assets/scss/nav.scss */
-  nav.grid-nav .grid-square:hover a {
-    text-decoration: underline; }
 
-/* line 17, assets/scss/nav.scss */
+/* line 12, assets/scss/nav.scss */
 nav.grid-nav a {
   position: absolute;
   display: block;
@@ -20461,17 +20471,21 @@ nav.grid-nav a {
   font-size: 27px;
   line-height: 27px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  /* line 31, assets/scss/nav.scss */
+  /* line 27, assets/scss/nav.scss */
   nav.grid-nav a span {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     padding-bottom: 12px; }
+  /* line 35, assets/scss/nav.scss */
+  nav.grid-nav a:hover span {
+    text-decoration: underline; }
 
 /* line 41, assets/scss/nav.scss */
 footer {
-  background-color: #758918; }
+  background-color: transparent;
+  /* colour also set in body - so that the colour continues off the page */ }
   /* line 44, assets/scss/nav.scss */
   footer .nav > li > a {
     color: #FFF;
@@ -20498,83 +20512,106 @@ footer {
           text-shadow: none;
           color: #564334; }
 
-/* line 2, assets/scss/media.scss */
-.chimney-image {
-  background: #EFEFEF url("../images/factoryandpark.jpg") center center/cover no-repeat; }
+/* line 1, assets/scss/media.scss */
+html {
+  background-color: #758918; }
 
-/* line 8, assets/scss/media.scss */
+/* line 5, assets/scss/media.scss */
+body {
+  background: transparent; }
+
+/* line 9, assets/scss/media.scss */
+body .text-content-outer-container {
+  background-color: #FFF; }
+
+/* line 13, assets/scss/media.scss */
+.intro-content {
+  background-color: #758918; }
+
+/* line 17, assets/scss/media.scss */
+.chimney-image {
+  background: #EFEFEF url("../images/factoryandpark.jpg") center top/cover no-repeat; }
+
+/* line 21, assets/scss/media.scss */
 .path1-image {
   background: #EFEFEF url("../images/xs/path1.jpg") center center/cover no-repeat;
   background-attachment: fixed;
   overflow: hidden; }
   @media (min-width: 768px) {
-    /* line 8, assets/scss/media.scss */
+    /* line 21, assets/scss/media.scss */
     .path1-image {
       background: #EFEFEF url("../images/sm/path1.jpg") center center/cover no-repeat; } }
   @media (min-width: 992px) {
-    /* line 8, assets/scss/media.scss */
+    /* line 21, assets/scss/media.scss */
     .path1-image {
       background: #EFEFEF url("../images/md/path1.jpg") center center/cover no-repeat; } }
   @media (min-width: 1200px) {
-    /* line 8, assets/scss/media.scss */
+    /* line 21, assets/scss/media.scss */
     .path1-image {
       background: #EFEFEF url("../images/lg/path1.jpg") center center/cover no-repeat; } }
 
-/* line 26, assets/scss/media.scss */
-.path2-image {
-  background: #EFEFEF url("../images/lg/path2.jpg") center center/cover no-repeat; }
-
-/* line 30, assets/scss/media.scss */
-.path3-image {
-  background: #EFEFEF url("../images/lg/path3.jpg") center center/cover no-repeat; }
-
-/* line 34, assets/scss/media.scss */
-.path4-image {
-  background: #EFEFEF url("../images/lg/path4.jpg") center center/cover no-repeat; }
-
 /* line 38, assets/scss/media.scss */
-.grid-square-test {
-  margin: 0 -15px; }
+.path1-image::before, .path1-image::after {
+  background-image: url("../images/lg/path1.jpg"); }
 
 /* line 42, assets/scss/media.scss */
-.path1-image::before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-image: url("../images/lg/path1.jpg");
-  background-position: bottom center; }
+.path2-image::before, .path2-image::after {
+  background-image: url("../images/lg/path2.jpg"); }
 
-/* line 53, assets/scss/media.scss */
-.path1-image::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 51px;
-  content: "";
-  background-image: url("../images/lg/path1.jpg");
-  background-position: bottom center;
-  -webkit-filter: blur(4px) brightness(80%);
-  filter: blur(4px) brightness(80%); }
+/* line 46, assets/scss/media.scss */
+.path3-image::before, .path3-image::after {
+  background-image: url("../images/lg/path3.jpg"); }
 
-/* line 65, assets/scss/media.scss */
-.grid-nav-link::before {
-  height: 100%; }
+/* line 50, assets/scss/media.scss */
+.path4-image::before, .path4-image::after {
+  background-image: url("../images/lg/path4.jpg"); }
 
-@media (min-width: 1200px) {
-  /* line 72, assets/scss/media.scss */
-  .grid-nav .grid-square {
-    -webkit-filter: grayscale(55%);
-    filter: grayscale(55%); }
-  /* line 76, assets/scss/media.scss */
-  .grid-nav .grid-square:hover {
+/* line 54, assets/scss/media.scss */
+.grid-square {
+  overflow: hidden; }
+  /* line 57, assets/scss/media.scss */
+  .grid-square::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-position: bottom center; }
+    @media (min-width: 992px) {
+      /* line 57, assets/scss/media.scss */
+      .grid-square::before {
+        -webkit-filter: grayscale(55%);
+        filter: grayscale(55%); } }
+  /* line 73, assets/scss/media.scss */
+  .grid-square::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 51px;
+    content: "";
+    background-position: bottom center;
+    -webkit-filter: blur(4px) brightness(80%) grayscale(55%);
+    filter: blur(4px) brightness(80%) grayscale(55%); }
+
+@media (min-width: 992px) {
+  /* line 87, assets/scss/media.scss */
+  .grid-square:hover::before {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
-    background-size: 105%;
     -webkit-transition: all 1s ease;
     transition: all 1s ease; } }
+
+/* line 93, assets/scss/media.scss */
+footer {
+  background-color: rgba(117, 137, 24, 0.7); }
+
+/* line 96, assets/scss/media.scss */
+html {
+  background-color: #758918;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+  background-attachment: fixed;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ }
 
 /*# sourceMappingURL=../../sass */
