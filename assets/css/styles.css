@@ -4511,7 +4511,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
+h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -4521,8 +4521,8 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
   h2 .small, h3 small, h3 footer,
-  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
+  h3 .small, h4 small, h4 footer,
+  h4 .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -4558,14 +4558,14 @@ h3, .h3 {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4,
+h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
+  h4 small, h4 footer,
+  h4 .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -4590,7 +4590,7 @@ h3, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4 {
+h4, .h4 {
   font-size: 24px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -8842,7 +8842,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
+h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -8852,8 +8852,8 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
   h2 .small, h3 small, h3 footer,
-  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
+  h3 .small, h4 small, h4 footer,
+  h4 .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -8889,14 +8889,14 @@ h3, .h3 {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4,
+h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
+  h4 small, h4 footer,
+  h4 .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -8921,7 +8921,7 @@ h3, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4 {
+h4, .h4 {
   font-size: 24px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -13238,7 +13238,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
+h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -13248,8 +13248,8 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
   h2 .small, h3 small, h3 footer,
-  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
+  h3 .small, h4 small, h4 footer,
+  h4 .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -13285,14 +13285,14 @@ h3, .h3 {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4,
+h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
+  h4 small, h4 footer,
+  h4 .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -13317,7 +13317,7 @@ h3, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4 {
+h4, .h4 {
   font-size: 24px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -17584,7 +17584,7 @@ hr {
   cursor: pointer; }
 
 /* line 9, assets/vendor/bootstrap/bootstrap/_type.scss */
-h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
+h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -17594,8 +17594,8 @@ h1, h2, h3, h4, nav.grid-nav .grid-nav-link a, h5, h6,
   h1 small, h1 footer,
   h1 .small, h2 small, h2 footer,
   h2 .small, h3 small, h3 footer,
-  h3 .small, h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, h5 small, h5 footer,
+  h3 .small, h4 small, h4 footer,
+  h4 .small, h5 small, h5 footer,
   h5 .small, h6 small, h6 footer,
   h6 .small,
   .h1 small,
@@ -17631,14 +17631,14 @@ h3, .h3 {
     font-size: 65%; }
 
 /* line 35, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4,
+h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 12.5px;
   margin-bottom: 12.5px; }
   /* line 41, assets/vendor/bootstrap/bootstrap/_type.scss */
-  h4 small, nav.grid-nav .grid-nav-link a small, h4 footer, nav.grid-nav .grid-nav-link a footer,
-  h4 .small, nav.grid-nav .grid-nav-link a .small, .h4 small, .h4 footer,
+  h4 small, h4 footer,
+  h4 .small, .h4 small, .h4 footer,
   .h4 .small,
   h5 small,
   h5 footer,
@@ -17663,7 +17663,7 @@ h3, .h3 {
   font-size: 32px; }
 
 /* line 50, assets/vendor/bootstrap/bootstrap/_type.scss */
-h4, nav.grid-nav .grid-nav-link a, .h4 {
+h4, .h4 {
   font-size: 24px; }
 
 /* line 51, assets/vendor/bootstrap/bootstrap/_type.scss */
@@ -20440,64 +20440,59 @@ input[type="button"].btn-block {
 /* other */
 /* line 6, assets/scss/nav.scss */
 nav.grid-nav .grid-square {
-  position: relative; }
-  /* line 9, assets/scss/nav.scss */
+  position: relative;
+  margin: 0 -15px;
+  /* expand back to edges of column */ }
+  /* line 11, assets/scss/nav.scss */
   nav.grid-nav .grid-square:hover a {
     text-decoration: underline; }
 
-/* line 14, assets/scss/nav.scss */
-nav.grid-nav .grid-nav-link {
+/* line 17, assets/scss/nav.scss */
+nav.grid-nav a {
   position: absolute;
-  left: 50%;
+  display: block;
   top: 0;
-  width: 100%; }
-  /* line 20, assets/scss/nav.scss */
-  nav.grid-nav .grid-nav-link a {
-    position: relative;
-    left: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  color: #FFF;
+  text-align: center;
+  font-size: 27px;
+  line-height: 27px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  /* line 31, assets/scss/nav.scss */
+  nav.grid-nav a span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    min-height: 2.4em;
-    margin: auto;
-    color: #3B3717;
-    display: block;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
-    /* line 34, assets/scss/nav.scss */
-    nav.grid-nav .grid-nav-link a span {
-      position: absolute;
-      display: block;
-      bottom: 0;
-      width: 100%;
-      padding-bottom: 12px; }
+    padding-bottom: 12px; }
 
-/* line 45, assets/scss/nav.scss */
+/* line 41, assets/scss/nav.scss */
 footer {
   background-color: #758918; }
-  /* line 48, assets/scss/nav.scss */
+  /* line 44, assets/scss/nav.scss */
   footer .nav > li > a {
     color: #FFF;
     text-align: center; }
-    /* line 52, assets/scss/nav.scss */
+    /* line 48, assets/scss/nav.scss */
     footer .nav > li > a:hover {
       background-color: transparent;
       text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
-  /* line 58, assets/scss/nav.scss */
+  /* line 54, assets/scss/nav.scss */
   footer .social.nav {
     text-align: center; }
-    /* line 61, assets/scss/nav.scss */
+    /* line 57, assets/scss/nav.scss */
     footer .social.nav li {
       padding-top: 12px;
       display: inline-block; }
-      /* line 65, assets/scss/nav.scss */
+      /* line 61, assets/scss/nav.scss */
       footer .social.nav li a {
         color: #49281F;
         font-size: 2rem;
         font-weight: 800; }
-        /* line 71, assets/scss/nav.scss */
+        /* line 67, assets/scss/nav.scss */
         footer .social.nav li a:hover {
           background-color: transparent;
           text-shadow: none;
@@ -20507,28 +20502,74 @@ footer {
 .chimney-image {
   background: #EFEFEF url("../images/factoryandpark.jpg") center center/cover no-repeat; }
 
-/* line 6, assets/scss/media.scss */
+/* line 8, assets/scss/media.scss */
 .path1-image {
-  background: #EFEFEF url("../images/path1.jpg") center center/cover no-repeat; }
+  background: #EFEFEF url("../images/xs/path1.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    /* line 8, assets/scss/media.scss */
+    .path1-image {
+      background: #EFEFEF url("../images/sm/path1.jpg") center center/cover no-repeat; } }
+  @media (min-width: 992px) {
+    /* line 8, assets/scss/media.scss */
+    .path1-image {
+      background: #EFEFEF url("../images/md/path1.jpg") center center/cover no-repeat; } }
+  @media (min-width: 1200px) {
+    /* line 8, assets/scss/media.scss */
+    .path1-image {
+      background: #EFEFEF url("../images/lg/path1.jpg") center center/cover no-repeat; } }
 
-/* line 10, assets/scss/media.scss */
+/* line 26, assets/scss/media.scss */
 .path2-image {
-  background: #EFEFEF url("../images/path2.jpg") center center/cover no-repeat; }
+  background: #EFEFEF url("../images/lg/path2.jpg") center center/cover no-repeat; }
 
-/* line 14, assets/scss/media.scss */
+/* line 30, assets/scss/media.scss */
 .path3-image {
-  background: #EFEFEF url("../images/path3.jpg") center center/cover no-repeat; }
+  background: #EFEFEF url("../images/lg/path3.jpg") center center/cover no-repeat; }
 
-/* line 18, assets/scss/media.scss */
+/* line 34, assets/scss/media.scss */
 .path4-image {
-  background: #EFEFEF url("../images/path4.jpg") center center/cover no-repeat; }
+  background: #EFEFEF url("../images/lg/path4.jpg") center center/cover no-repeat; }
+
+/* line 38, assets/scss/media.scss */
+.grid-square-test {
+  margin: 0 -15px; }
+
+/* line 42, assets/scss/media.scss */
+.path1-image::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("../images/lg/path1.jpg");
+  background-position: bottom center; }
+
+/* line 53, assets/scss/media.scss */
+.path1-image::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 51px;
+  content: "";
+  background-image: url("../images/lg/path1.jpg");
+  background-position: bottom center;
+  -webkit-filter: blur(4px) brightness(80%);
+  filter: blur(4px) brightness(80%); }
+
+/* line 65, assets/scss/media.scss */
+.grid-nav-link::before {
+  height: 100%; }
 
 @media (min-width: 1200px) {
-  /* line 24, assets/scss/media.scss */
+  /* line 72, assets/scss/media.scss */
   .grid-nav .grid-square {
     -webkit-filter: grayscale(55%);
     filter: grayscale(55%); }
-  /* line 28, assets/scss/media.scss */
+  /* line 76, assets/scss/media.scss */
   .grid-nav .grid-square:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);

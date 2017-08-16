@@ -5,39 +5,35 @@ nav.grid-nav {
 
   .grid-square {
     position: relative;
+    margin:0 -15px; /* expand back to edges of column */
+
 
     &:hover a {
       text-decoration: underline;
     }
   }
 
-  .grid-nav-link {
+
+  a {
     position: absolute;
-    left:50%;
+    display:block;
     top:0;
+    left:0;
     width:100%;
+    height:100%;
+    z-index: 10;
+    color:$colour_white;
+    text-align: center;
+    font-size:$grid_nav_font_size;
+    line-height: $grid_nav_font_size;
+    text-shadow: $general_text_shadow;
 
-    a {
-      @extend h4;
-      position: relative;
-      left:-50%;
+    span {
+      position: absolute;
+      left:0;
+      bottom:0;
       width:100%;
-      min-height: 2.4em;
-      margin:auto;
-      color:$colour_main_dark;
-      display: block;
-      text-align: center;
-      background-color: rgba(0,0,0,0.6);
-      text-shadow: $general_text_shadow;
-      background: linear-gradient(to bottom, rgba(255,255,255,0.6) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-      span {
-        position: absolute;
-        display:block;
-        bottom:0;
-        width:100%;
-        padding-bottom:$padding-base-vertical*2;
-      }
+      padding-bottom:$grid_nav_text_padding;
     }
   }
 }

@@ -1,26 +1,74 @@
 
 .chimney-image {
   background: $colour_offwhite url("../images/factoryandpark.jpg") $centre_bg_shorthand;
+
+
 }
 
 .path1-image {
-  background: $colour_offwhite url("../images/path1.jpg") $centre_bg_shorthand;
+  background: $colour_offwhite url("../images/xs/path1.jpg") $centre_bg_shorthand;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  @media (min-width: $screen-sm) {
+    background: $colour_offwhite url("../images/sm/path1.jpg") $centre_bg_shorthand;
+  }
+  @media (min-width: $screen-md) {
+    background: $colour_offwhite url("../images/md/path1.jpg") $centre_bg_shorthand;
+  }
+  @media (min-width: $screen-lg) {
+    background: $colour_offwhite url("../images/lg/path1.jpg") $centre_bg_shorthand;
+  }
+
+
 }
 
 .path2-image {
-  background: $colour_offwhite url("../images/path2.jpg") $centre_bg_shorthand;
+  background: $colour_offwhite url("../images/lg/path2.jpg") $centre_bg_shorthand;
 }
 
 .path3-image {
-  background: $colour_offwhite url("../images/path3.jpg") $centre_bg_shorthand;
+  background: $colour_offwhite url("../images/lg/path3.jpg") $centre_bg_shorthand;
 }
 
 .path4-image {
-  background: $colour_offwhite url("../images/path4.jpg") $centre_bg_shorthand;
+  background: $colour_offwhite url("../images/lg/path4.jpg") $centre_bg_shorthand;
 }
 
+.grid-square-test {
+  margin:0 -15px;
+}
+
+.path1-image::before {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100%;
+  content:"";
+  background-image: url("../images/lg/path1.jpg");
+  background-position: bottom center;
+}
+
+.path1-image::after {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:$grid_nav_blur_height;
+  content:"";
+  background-image: url("../images/lg/path1.jpg");
+  background-position: bottom center;
+  filter:blur(4px) brightness(80%);
+}
+
+.grid-nav-link::before {
+  height: 100%;
+}
 
 @media (min-width: $screen-lg) {
+
+
   .grid-nav .grid-square {
     filter: grayscale(55%);
   }

@@ -34,5 +34,9 @@ $general_transition: all 1s ease;
 $footer_hover_bg: transparentize($colour_white, 0.5);
 
 /* other */
-$opacity_low: 0.3
+$opacity_low: 0.3;
+$grid_nav_text_padding: $padding-base-vertical*2;
+$grid_nav_font_size: $base_font_size*1.5;
+$grid_nav_blur_height: ($grid_nav_text_padding*2) + $grid_nav_font_size;
+
 
