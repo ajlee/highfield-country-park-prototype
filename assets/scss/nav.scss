@@ -1,5 +1,4 @@
 @import "_variables.scss";
-@import "_colours.scss";
 
 nav.grid-nav {
 
@@ -19,6 +18,7 @@ nav.grid-nav {
     z-index: 10;
     color:$colour_white;
     text-align: center;
+    font-weight:800;
     font-size:$grid_nav_font_size;
     line-height: $grid_nav_font_size;
     text-shadow: $general_text_shadow;
@@ -29,7 +29,7 @@ nav.grid-nav {
       left:0;
       bottom:0;
       width:100%;
-      padding-bottom:$grid_nav_text_padding;
+      padding-bottom:$padding_grid_nav_text;
     }
 
     &:hover span {
@@ -40,12 +40,16 @@ nav.grid-nav {
 
 /* secondary pages nav */
 .linear-nav {
-  height:100px;
+  height:$linear_nav_height;
 
   .linear-nav-image {
     position:relative;
-    height:100px;
-    border-left:1px solid white;
+    height:$linear_nav_height;
+    border-left:$linear_nav_left_border;
+
+    &:first-of-type {
+      border-left:none;
+    }
 
     a {
       position:absolute;
@@ -54,9 +58,9 @@ nav.grid-nav {
       display:block;
       height:100%;
       width:100%;
-      background-color: rgba(0,0,0,0.5);
-      color:white;
-      font-weight:800;
+      background-color: $linear_nav_bg_tint;
+      color:$linear_nav_text_colour;
+      font-weight:$linear_nav_font_weight;
       text-align:center;
 
       span {
@@ -71,10 +75,12 @@ nav.grid-nav {
 }
 
 footer {
-  background-color:transparent; /* colour also set in body - so that the colour continues off the page */
+  background-color:transparent;
+  /* colour set in html element
+   * this results in the colour continuing off the page */
 
   .nav > li > a {
-    color:$colour_white;
+    color:$footer_font_colour;
     text-align:center;
 
     &:hover {
@@ -87,19 +93,19 @@ footer {
     text-align:center;
 
     li {
-      padding-top:$padding-footer-social-top;
+      padding-top:$padding_footer_social_top;
       display:inline-block;
 
       a {
 
-        color:$colour_second;
-        font-size: 2rem;
+        color:$social_nav_colour;
+        font-size: $social_nav_size;
         font-weight: 800;
 
         &:hover {
           background-color: transparent;
           text-shadow: none;
-          color:$colour_second_light;
+          color:$social_nav_colour_hover;
         }
       }
     }

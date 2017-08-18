@@ -51,6 +51,12 @@ gulp.task('vendor', function () {
     .pipe(gulp.dest('./assets/vendor/font-awesome/scss'));
   gulp.src(['./node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*'])
     .pipe(gulp.dest('./assets/vendor/font-awesome/fonts'));
+  gulp.src(['./node_modules/leaflet/dist/**/*'])
+    .pipe(gulp.dest('./assets/vendor/leaflet'));
+  gulp.src(['./node_modules/list.js/dist/**/*'])
+    .pipe(gulp.dest('./assets/vendor/listjs'));
+  gulp.src(['./node_modules/animate.scss/vendor/assets/stylesheets/**/*'])
+    .pipe(gulp.dest('./assets/vendor/animate.scss'));
   });
 
 

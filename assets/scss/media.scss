@@ -1,5 +1,5 @@
 html {
-  background-color:$colour_main;
+  background-color:$colour_html_bg;
 }
 
 body {
@@ -34,8 +34,11 @@ body .text-content-outer-container {
   }
 }
 
-.linear-nav .linear-nav-image.chimney-image a {
-  background-color: transparent;
+.linear-nav .linear-nav-image.chimney-image {
+    background-position: center bottom;
+    a {
+    background-color: transparent;
+  }
 }
 
 .path1-image::before, .path1-image::after, .linear-nav-image.path1-image {

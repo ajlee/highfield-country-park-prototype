@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "animate.scss": "^0.0.6",
     "bootstrap": "^3.3.7",
     "bootstrap-package-manager": "^1.1.8",
     "bootstrap-sass": "^3.3.7",
@@ -11,7 +12,9 @@
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "leaflet": "^1.2.0",
+    "list.js": "^1.5.0"
   },
   "name": "HTML",
   "version": "1.0.0",

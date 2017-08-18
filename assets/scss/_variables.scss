@@ -1,45 +1,5 @@
 @import "../vendor/bootstrap/bootstrap-custom";
-@import "colours";
 
-/* bootstrap variables */
-$grid-gutter: 15px;
-$screen-gutter: 15px;
-
-/* element spacing */
-
-
-$intro_content_padding_bottom: $padding-base-vertical*2; /* careful to be above the fold */
-$main_content_outer_container_top: $padding-base-vertical*2;
-$main_content_outer_container_bottom: $padding-base-vertical*10;
-$padding_footer-social_top: $padding-base-vertical*2;
-
-/* screen widths */
-
-
-/* type */
-$base_font_size: 18px;
-$font_open_sans: Open Sans, Sans;
-$font_lora: Lora, Georgia;
-$font_weight_bold: 800;
-$font_weight_normal: 500;
-$font_weight_light: 300;
-$general_text_shadow: 0 0 10px rgba(0,0,0,0.5);
-
-
-/* images */
-$homepage_main_image_height_mobile: 350px;
-$homepage_main_image_height: 550px;
-$centre_bg_shorthand: center center / cover no-repeat;
-
-/* transitions */
-$general_transition: all 1s ease;
-$footer_hover_bg: transparentize($colour_white, 0.5);
-
-/* other */
-$opacity_low: 0.3;
-$grid_nav_text_padding: $padding-base-vertical*2;
-$grid_nav_font_size: $base_font_size*1.5;
-$grid_nav_blur_height: ($grid_nav_text_padding*2) + $grid_nav_font_size;
 
 // palette based on http://www.colourlovers.com/palette/680350/earthy
 
@@ -52,3 +12,58 @@ $colour_main: #758918;
 $colour_main_dark: #3B3717;
 $colour_second_light: #564334;
 $colour_second: #49281F;
+
+$html_background_colour: $colour_main;
+$colour_html_bg: $colour_main;
+$colour_category: $colour_main;
+$footer_font_colour: $colour_white;
+$social_nav_colour: $colour_second;
+$social_nav_colour_hover: $colour_second_light;
+
+$homepage_main_image_height_mobile: 350px;
+$homepage_main_image_height: 450px;
+
+$centre_bg_shorthand: center center / cover no-repeat;
+
+$padding_homepage_title_bottom_xs:$padding-base-vertical;
+$padding_homepage_title_bottom_sm:$homepage_main_image_height/3;
+
+$intro_content_padding_bottom_xs:$padding-base-vertical*2;
+$intro_content_padding_bottom_lg: $padding-base-vertical*2; /* careful to be above the fold */
+
+$main_content_outer_container_top: $padding-base-vertical*2;
+$main_content_outer_container_bottom: $padding-base-vertical*10;
+
+$padding_article_listing_top:$padding-base-vertical*4;
+$padding_article_listing_bottom:$padding-base-vertical*6;
+$padding_listing_teaser_top:$padding-base-vertical*2;
+$padding_listing_teaser_bottom:$padding-base-vertical*2;
+$padding_listing_teaser_horizonthal:$padding-base-horizontal*2;
+$padding_listing_teaser_col_padding_xs:$padding-base-horizontal;
+$padding_listing_teaser_col_padding_lg:$padding-base-horizontal*2;
+$padding_cta_bottom: $padding-base-vertical*2;
+$padding_footer_social_top: $padding-base-vertical*2;
+$padding_grid_nav_text: $padding-base-vertical*4;
+$margin_left_cta_button: $padding-base-horizontal;
+
+$news_border_top_style: 1px solid $colour_main;
+
+$social_nav_size: 32px;
+
+$linear_nav_height:100px;
+$linear_nav_left_border:1px solid $colour_white;
+$linear_nav_bg_tint:rgba(0,0,0,0.5);
+$linear_nav_text_colour:$colour_white;
+$linear_nav_font_weight: 800;
+
+$grid_nav_font_size: $font-size-base*1.1;
+$grid_nav_blur_height: ($padding_grid_nav_text*2) + $grid_nav_font_size;
+
+$general_text_shadow: 0 0 10px rgba(0,0,0,0.5);
+$general_transition: all 1s ease;
+
+$footer_hover_bg: transparentize($colour_white, 0.5);
+
+$opacity_low: 0.3;
+
+

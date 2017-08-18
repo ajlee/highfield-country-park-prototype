@@ -1,14 +1,13 @@
 @import "variables.scss";
-@import "colours.scss";
 
 .title-container {
   position:absolute;
-  left:-$grid-gutter-width/2;
+  left:-$grid-gutter-width/2; /* negative margin to go full width and counter gutter width */
   width:100%;
-  bottom:$padding-base-vertical;
+  bottom:$padding_homepage_title_bottom_xs;
 
   @media (min-width: $screen-sm) {
-    bottom:$homepage_main_image_height/3;
+    bottom:$padding_homepage_title_bottom_sm;
   }
 }
 
@@ -31,7 +30,7 @@
 
 .title-bg-image.small {
 
-  min-height: 100px;
+  min-height: $linear_nav_height;
 }
 
 .title {
@@ -44,8 +43,13 @@
  * main section
  */
 .intro-content {
-  padding-bottom: $intro_content_padding_bottom;
+  padding-bottom: $intro_content_padding_bottom_xs;
   background-color: $colour_main;
+
+  @media (min-width: $screen-sm) {
+    padding-bottom: $intro_content_padding_bottom_xs;
+  }
+
 
   .column {
     min-height: $homepage_main_image_height_mobile;
@@ -56,11 +60,6 @@
   }
 }
 
-
-/* secondary pages nav */
-.linear-nav {
-  height:100px;
-}
 .grid-gallery .grid-square {
   min-height: $homepage_main_image_height_mobile/2;
 
@@ -91,4 +90,12 @@ footer {
     .col-xs-portrait-12 {
          width:100% !important;
     }
+}
+
+.call-to-action .btn {
+  margin-left: $margin_left_cta_button;
+}
+
+.eyebrow {
+  display:block;
 }

@@ -1397,11 +1397,11 @@ textarea {
 
 /* line 48, assets/vendor/bootstrap/bootstrap/_scaffolding.scss */
 a {
-  color: #337ab7;
+  color: #758918;
   text-decoration: none; }
   /* line 52, assets/vendor/bootstrap/bootstrap/_scaffolding.scss */
   a:hover, a:focus {
-    color: #23527c;
+    color: #3d480d;
     text-decoration: underline; }
   /* line 58, assets/vendor/bootstrap/bootstrap/_scaffolding.scss */
   a:focus {
@@ -1624,12 +1624,12 @@ mark,
 
 /* line 5, assets/vendor/bootstrap/bootstrap/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #337ab7; }
+  color: #758918; }
 
 /* line 8, assets/vendor/bootstrap/bootstrap/mixins/_text-emphasis.scss */
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090; }
+  color: #505e10; }
 
 /* line 5, assets/vendor/bootstrap/bootstrap/mixins/_text-emphasis.scss */
 .text-success {
@@ -1673,12 +1673,12 @@ a.text-danger:focus {
 
 /* line 5, assets/vendor/bootstrap/bootstrap/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #337ab7; }
+  background-color: #758918; }
 
 /* line 8, assets/vendor/bootstrap/bootstrap/mixins/_background-variant.scss */
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #286090; }
+  background-color: #505e10; }
 
 /* line 5, assets/vendor/bootstrap/bootstrap/mixins/_background-variant.scss */
 .bg-success {
@@ -2989,7 +2989,7 @@ output {
   display: block;
   width: 100%;
   height: 39px;
-  padding: 6px 12px;
+  padding: 6px 16px;
   font-size: 18px;
   line-height: 1.42857;
   color: #555555;
@@ -3166,7 +3166,7 @@ fieldset[disabled]
 /* line 71, assets/vendor/bootstrap/bootstrap/mixins/_forms.scss */
 .input-sm {
   height: 36px;
-  padding: 5px 10px;
+  padding: 5px 12px;
   font-size: 16px;
   line-height: 1.5;
   border-radius: 3px; }
@@ -3184,7 +3184,7 @@ select[multiple].input-sm {
 /* line 333, assets/vendor/bootstrap/bootstrap/_forms.scss */
 .form-group-sm .form-control {
   height: 36px;
-  padding: 5px 10px;
+  padding: 5px 12px;
   font-size: 16px;
   line-height: 1.5;
   border-radius: 3px; }
@@ -3203,14 +3203,14 @@ select[multiple].input-sm {
 .form-group-sm .form-control-static {
   height: 36px;
   min-height: 41px;
-  padding: 6px 10px;
+  padding: 6px 12px;
   font-size: 16px;
   line-height: 1.5; }
 
 /* line 71, assets/vendor/bootstrap/bootstrap/mixins/_forms.scss */
 .input-lg {
   height: 53px;
-  padding: 10px 16px;
+  padding: 10px 20px;
   font-size: 23px;
   line-height: 1.33333;
   border-radius: 6px; }
@@ -3228,7 +3228,7 @@ select[multiple].input-lg {
 /* line 359, assets/vendor/bootstrap/bootstrap/_forms.scss */
 .form-group-lg .form-control {
   height: 53px;
-  padding: 10px 16px;
+  padding: 10px 20px;
   font-size: 23px;
   line-height: 1.33333;
   border-radius: 6px; }
@@ -3247,7 +3247,7 @@ select[multiple].input-lg {
 .form-group-lg .form-control-static {
   height: 53px;
   min-height: 48px;
-  padding: 11px 16px;
+  padding: 11px 20px;
   font-size: 23px;
   line-height: 1.33333; }
 
@@ -3516,7 +3516,7 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
+  padding: 6px 16px;
   font-size: 18px;
   line-height: 1.42857;
   border-radius: 4px;
@@ -3600,32 +3600,32 @@ fieldset[disabled] a.btn {
 /* line 71, assets/vendor/bootstrap/bootstrap/_buttons.scss */
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4; }
+  background-color: #758918;
+  border-color: #627314; }
   /* line 11, assets/vendor/bootstrap/bootstrap/mixins/_buttons.scss */
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
-    background-color: #286090;
-    border-color: #122b40; }
+    background-color: #505e10;
+    border-color: #060701; }
   /* line 17, assets/vendor/bootstrap/bootstrap/mixins/_buttons.scss */
   .btn-primary:hover {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74; }
+    background-color: #505e10;
+    border-color: #363f0b; }
   /* line 22, assets/vendor/bootstrap/bootstrap/mixins/_buttons.scss */
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74; }
+    background-color: #505e10;
+    border-color: #363f0b; }
     /* line 29, assets/vendor/bootstrap/bootstrap/mixins/_buttons.scss */
     .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
     .open > .btn-primary.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle.focus {
       color: #fff;
-      background-color: #204d74;
-      border-color: #122b40; }
+      background-color: #363f0b;
+      border-color: #060701; }
   /* line 37, assets/vendor/bootstrap/bootstrap/mixins/_buttons.scss */
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
@@ -3635,11 +3635,11 @@ fieldset[disabled] a.btn {
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary.focus {
-    background-color: #337ab7;
-    border-color: #2e6da4; }
+    background-color: #758918;
+    border-color: #627314; }
   /* line 53, assets/vendor/bootstrap/bootstrap/mixins/_buttons.scss */
   .btn-primary .badge {
-    color: #337ab7;
+    color: #758918;
     background-color: #fff; }
 
 /* line 75, assets/vendor/bootstrap/bootstrap/_buttons.scss */
@@ -3824,7 +3824,7 @@ fieldset[disabled] a.btn {
 
 /* line 96, assets/vendor/bootstrap/bootstrap/_buttons.scss */
 .btn-link {
-  color: #337ab7;
+  color: #758918;
   font-weight: normal;
   border-radius: 0; }
   /* line 101, assets/vendor/bootstrap/bootstrap/_buttons.scss */
@@ -3838,7 +3838,7 @@ fieldset[disabled] a.btn {
     border-color: transparent; }
   /* line 115, assets/vendor/bootstrap/bootstrap/_buttons.scss */
   .btn-link:hover, .btn-link:focus {
-    color: #23527c;
+    color: #3d480d;
     text-decoration: underline;
     background-color: transparent; }
   /* line 123, assets/vendor/bootstrap/bootstrap/_buttons.scss */
@@ -3850,21 +3850,21 @@ fieldset[disabled] a.btn {
 
 /* line 135, assets/vendor/bootstrap/bootstrap/_buttons.scss */
 .btn-lg {
-  padding: 10px 16px;
+  padding: 10px 20px;
   font-size: 23px;
   line-height: 1.33333;
   border-radius: 6px; }
 
 /* line 139, assets/vendor/bootstrap/bootstrap/_buttons.scss */
 .btn-sm {
-  padding: 5px 10px;
+  padding: 5px 12px;
   font-size: 16px;
   line-height: 1.5;
   border-radius: 3px; }
 
 /* line 143, assets/vendor/bootstrap/bootstrap/_buttons.scss */
 .btn-xs {
-  padding: 1px 5px;
+  padding: 1px 6px;
   font-size: 16px;
   line-height: 1.5;
   border-radius: 3px; }
@@ -3921,7 +3921,7 @@ input[type="button"].btn-block {
   /* line 46, assets/vendor/bootstrap/bootstrap/_navs.scss */
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #337ab7; }
+    border-color: #758918; }
   /* line 59, assets/vendor/bootstrap/bootstrap/_navs.scss */
   .nav .nav-divider {
     height: 1px;
@@ -3968,7 +3968,7 @@ input[type="button"].btn-block {
   /* line 131, assets/vendor/bootstrap/bootstrap/_navs.scss */
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #337ab7; }
+    background-color: #758918; }
 
 /* line 144, assets/vendor/bootstrap/bootstrap/_navs.scss */
 .nav-stacked > li {

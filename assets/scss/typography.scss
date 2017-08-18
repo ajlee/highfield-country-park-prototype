@@ -1,5 +1,4 @@
 @import "variables.scss";
-@import "colours.scss";
 
 p, .body-content, .eyebrow {
   font-family: $font-family-serif;
@@ -23,6 +22,24 @@ article header h3 {
   text-shadow:0px 0px 1px $gray-lighter;
 }
 
+article.teaser header {
+  color:$colour_main;
+}
+
+.call-to-action {
+  display:block;
+  color:$colour_white;
+  text-align:center;
+  padding-bottom: $padding_cta_bottom;
+}
 footer {
   @extend small;
 }
+
+.eyebrow label {
+  color:$colour_main;
+}
+
+
+
+
