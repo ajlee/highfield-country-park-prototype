@@ -67,7 +67,7 @@ nav.grid-nav {
         display:block;
         padding-top:$padding-base-vertical*2;
 
-        //@media (max-width: $screen-xs-max) {
+        @media (max-width: $screen-xs-max) {
           &.contact::after {
             content:"\f0e0";
             font-family: "FontAwesome";
@@ -79,7 +79,7 @@ nav.grid-nav {
           &.contact {
             color:transparent; /* still visible to screen readers */
           }
-        //}
+        }
         @media (min-width: $screen-sm) {
           padding-top:$padding-base-vertical*4;
         }

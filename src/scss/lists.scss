@@ -35,17 +35,13 @@ ul {
 
   &.teasers {
     &.first {
-      padding-right:$padding_listing_teaser_col_padding_xs;
-
       @media (min-width: $screen-lg) {
-        padding-right:$padding_listing_teaser_col_padding_lg;
+        padding-right:$padding_listing_teaser_col_padding;
       }
     }
     &.second {
-      padding-left:$padding_listing_teaser_col_padding_xs;
-
       @media (min-width: $screen-lg) {
-        padding-left:$padding_listing_teaser_col_padding_lg;
+        padding-left:$padding_listing_teaser_col_padding;
       }
     }
     article:nth-child(odd){

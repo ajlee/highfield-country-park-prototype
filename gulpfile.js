@@ -25,8 +25,8 @@ gulp.task('sass', function () {
   	    cascade: false
   	}))
   	.pipe(concat('styles.css'))
-    .pipe(gulp.dest('./publish/assets/css'));
-  gulp.src('publish/assets/css/styles.css')
+    .pipe(gulp.dest('./src/assets/css'));
+  gulp.src('src/assets/css/styles.css')
     .pipe(clean())
     .pipe(rename('styles.min.css'))
     .pipe(gulp.dest('publish/assets/css'));
@@ -55,6 +55,7 @@ gulp.task('watch', function() {
   })
 });
 
+/* move vendor files to src directories */
 gulp.task('vendor', function () {
   gulp.src(['./node_modules/cssgram/source/css/*.css'])
     .pipe(gulp.dest('./src/vendor/cssgram'));
@@ -65,7 +66,7 @@ gulp.task('vendor', function () {
   gulp.src(['./node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*'])
     .pipe(gulp.dest('./src/assets/fonts'));
   gulp.src(['./node_modules/leaflet/dist/**/*'])
-    .pipe(gulp.dest('./src/vendor/leaflet'));
+    .pipe(gulp.dest('./src/assets/js/vendor/leaflet'));
   gulp.src(['./node_modules/list.js/dist/**/*'])
     .pipe(gulp.dest('./src/assets/js/vendor/listjs'));
   gulp.src(['./node_modules/animate.scss/vendor/assets/stylesheets/**/*'])
@@ -81,7 +82,7 @@ gulp.task('bootstrap', function () {
         cascade: false
     }))
     .pipe(concat('bootstrap.css'))
-    .pipe(gulp.dest('.publish/assets/css/'));
+    .pipe(gulp.dest('./src/assets/css/'));
 });
 
 
