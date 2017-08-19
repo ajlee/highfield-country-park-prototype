@@ -25,24 +25,8 @@
 
         <div class="row">
 
-          <nav class="linear-nav">
-            <div class="linear-nav-image col-xs-4 chimney-image">
-                <a href="index.html" class="title-link"><span>Highfield Country Park</span></a>
-              <!-- title container -->
-            </div> <!-- col-xs-4 -->
-            <div class="col-xs-2 linear-nav-image path1-image">
-              <a href="news-and-events.html"><span>News &amp; Events</span></a>
-            </div>
-            <div class="col-xs-2 linear-nav-image path2-image">
-              <a href="about.html"><span>About</span></a>
-            </div>
-            <div class="col-xs-2 linear-nav-image path3-image">
-                <a href="map.html"><span>Map</span></a>
-            </div>
-            <div class="col-xs-2 linear-nav-image path4-image">
-              <a href="#contact"><span class="contact">Contact</span></a>
-            </div> <!-- path 4 -->
-          </nav>
+          {% include 'partials/linear-nav.twig' %}
+
         </div>
       </div>
     </div>
@@ -91,49 +75,8 @@
     </div><!--/.outer container-->
        <!--/.footer-->
 
-    <footer>
-         <div class="footer" id="footer">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6">
-                         <ul class="nav">
-                             <li> <a href="#"> About </a> </li>
-                         </ul>
-                     </div>
-                     <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6">
-                         <ul class="nav">
-                             <li> <a href="#"> Contact </a> </li>
-                         </ul>
-                     </div>
-                     <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6">
-                         <ul class="nav">
-                             <li> <a href="#"> News &amp; Events </a> </li>
-                         </ul>
-                     </div>
-                     <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6">
-                         <ul class="nav">
-                             <li> <a href="#"> Map </a> </li>
-                         </ul>
-                     </div>
-                 </div>
-                 <!--/.row-->
-                 <div class="row">
-                   <div class="col-xs-12">
-                       <ul class="social nav">
-                           <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
-                           <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                           <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
-                           <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
-                           <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
-                       </ul>
-                   </div>
-                 </div>
-                 <!-- /.row -->
-             </div>
-             <!--/.container-->
-         </div>
-         <!--/.footer-->
-      </footer>
+  {% include './partials/footer.twig' %}
+
 </body>
 
 

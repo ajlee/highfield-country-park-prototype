@@ -4,32 +4,44 @@ var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 var clean = require('gulp-clean-css');
 var rename = require("gulp-rename");
+var twig_compile = require('gulp-twig-compile');
 //var imageResize = require('gulp-image-resize'); /* todo: solve error - module not found error */
+
+/* moves assets to publish folder and runs sass/twig compile */
+gulp.task('publish', function () {
+  gulp.run('sass');
+  gulp.run('twig');
+  gulp.src(['src/assets/**/*'])
+    .pipe(gulp.dest('publish/assets'));
+  });
 
 // Compile sass files
 gulp.task('sass', function () {
   gulp.run('bootstrap');
-  gulp.src('./assets/scss/styles.scss')
+  gulp.src('./src/scss/styles.scss')
     .pipe(sass({errLogToConsole: true, sourceComments: 'map', sourceMap: 'sass'}))
   	.pipe(autoprefixer({
   	    browsers: ['last 2 versions'],
   	    cascade: false
   	}))
   	.pipe(concat('styles.css'))
-    .pipe(gulp.dest('./assets/css'));
-  gulp.src('assets/css/styles.css')
+    .pipe(gulp.dest('./publish/assets/css'));
+  gulp.src('publish/assets/css/styles.css')
     .pipe(clean())
     .pipe(rename('styles.min.css'))
-    .pipe(gulp.dest('assets/css'))
-  gulp.src('./assets/scss/testing/*')
-  	.pipe(sass().on('error', sass.logError))
-  	.pipe(concat('testing.css'))
-  	.pipe(gulp.dest('./assets/css'));
-  gulp.src('./assets/scss/plugins/*')
-  	.pipe(sass().on('error', sass.logError))
-  	.pipe(gulp.dest('./assets/css/plugins'));
+    .pipe(gulp.dest('publish/assets/css'));
 
 });
+
+// compile twig files
+gulp.task('twig', function () {
+    'use strict';
+    var twig = require('gulp-twig');
+    return gulp.src('./src/twig/*.twig')
+        .pipe(twig())
+        .pipe(gulp.dest('publish'));
+});
+
 
 // The default task (called when you run `gulp`)
 gulp.task('watch', function() {
@@ -37,26 +49,27 @@ gulp.task('watch', function() {
 
   // Watch files and run tasks if they change
 
-  gulp.watch(['./assets/scss/*.scss', './assets/scss/testing/*.scss'], function() {
+  gulp.watch(['./src/scss/*.scss','./src/twig/**/*.twig'], function() {
     gulp.run('sass');
+    gulp.run('twig');
   })
 });
 
 gulp.task('vendor', function () {
   gulp.src(['./node_modules/cssgram/source/css/*.css'])
-    .pipe(gulp.dest('./assets/vendor/cssgram'));
+    .pipe(gulp.dest('./src/vendor/cssgram'));
   gulp.src(['./node_modules/bootstrap-sass/assets/stylesheets/**/*.scss'])
-    .pipe(gulp.dest('./assets/vendor/bootstrap/'));
+    .pipe(gulp.dest('./src/vendor/bootstrap/'));
   gulp.src(['./node_modules/font-awesome-sass/assets/stylesheets/**/*.scss'])
-    .pipe(gulp.dest('./assets/vendor/font-awesome/scss'));
+    .pipe(gulp.dest('./src/vendor/font-awesome/scss'));
   gulp.src(['./node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*'])
-    .pipe(gulp.dest('./assets/fonts'));
+    .pipe(gulp.dest('./src/assets/fonts'));
   gulp.src(['./node_modules/leaflet/dist/**/*'])
-    .pipe(gulp.dest('./assets/vendor/leaflet'));
+    .pipe(gulp.dest('./src/vendor/leaflet'));
   gulp.src(['./node_modules/list.js/dist/**/*'])
-    .pipe(gulp.dest('./assets/js/vendor/listjs'));
+    .pipe(gulp.dest('./src/assets/js/vendor/listjs'));
   gulp.src(['./node_modules/animate.scss/vendor/assets/stylesheets/**/*'])
-    .pipe(gulp.dest('./assets/vendor/animate.scss'));
+    .pipe(gulp.dest('./src/vendor/animate.scss'));
   });
 
 
@@ -68,7 +81,7 @@ gulp.task('bootstrap', function () {
         cascade: false
     }))
     .pipe(concat('bootstrap.css'))
-    .pipe(gulp.dest('./assets/css/'));
+    .pipe(gulp.dest('.publish/assets/css/'));
 });
 
 
@@ -85,18 +98,4 @@ gulp.task('responsive-images', function () {
     }))
     .pipe(gulp.dest('assets/images/md'));
   });
-
-
-gulp.task('publish', function () {
-  gulp.src(['assets/images/**/*.jpg','assets/images/**/*.png','assets/images/**/*.gif'])
-    .pipe(gulp.dest('publish/assets/images/'));
-  gulp.src(['assets/css/**/*'])
-    .pipe(gulp.dest('publish/assets/css/'));
-  gulp.src(['assets/js/**/*'])
-    .pipe(gulp.dest('publish/assets/js/'));
-  gulp.src(['assets/fonts/**/*'])
-    .pipe(gulp.dest('publish/assets/fonts/'));
-  gulp.src(['./*.html'])
-    .pipe(gulp.dest('publish/'));
-});
 

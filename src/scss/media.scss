@@ -18,22 +18,6 @@ body .text-content-outer-container {
   background: $colour_offwhite url("../images/factoryandpark.jpg") center top/cover no-repeat;
 }
 
-.path1-image {
-  background: $colour_offwhite url("../images/xs/path1.jpg") $centre_bg_shorthand;
-  background-attachment: fixed;
-  overflow: hidden;
-
-  @media (min-width: $screen-sm) {
-    background: $colour_offwhite url("../images/sm/path1.jpg") $centre_bg_shorthand;
-  }
-  @media (min-width: $screen-md) {
-    background: $colour_offwhite url("../images/md/path1.jpg") $centre_bg_shorthand;
-  }
-  @media (min-width: $screen-lg) {
-    background: $colour_offwhite url("../images/lg/path1.jpg") $centre_bg_shorthand;
-  }
-}
-
 .linear-nav .linear-nav-image.chimney-image {
     background-position: center bottom;
     a {
