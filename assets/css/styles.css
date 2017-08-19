@@ -4343,8 +4343,8 @@ body {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0#iefix") format("embedded-opentype"), url("../vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -29271,37 +29271,53 @@ nav.grid-nav a {
       /* line 66, assets/scss/nav.scss */
       .linear-nav .linear-nav-image a span {
         display: block;
-        padding-top: 30px; }
-    /* line 71, assets/scss/nav.scss */
+        padding-top: 12px; }
+        /* line 71, assets/scss/nav.scss */
+        .linear-nav .linear-nav-image a span.contact::after {
+          content: "\f0e0";
+          font-family: "FontAwesome";
+          position: relative;
+          top: -24px;
+          display: block;
+          color: #FFF; }
+        /* line 79, assets/scss/nav.scss */
+        .linear-nav .linear-nav-image a span.contact {
+          color: transparent;
+          /* still visible to screen readers */ }
+        @media (min-width: 768px) {
+          /* line 66, assets/scss/nav.scss */
+          .linear-nav .linear-nav-image a span {
+            padding-top: 24px; } }
+    /* line 89, assets/scss/nav.scss */
     .linear-nav .linear-nav-image.chimney-image {
       text-shadow: 0 0 2px #3B3717; }
 
-/* line 77, assets/scss/nav.scss */
+/* line 95, assets/scss/nav.scss */
 footer {
   background-color: transparent;
   /* colour set in html element
    * this results in the colour continuing off the page */ }
-  /* line 82, assets/scss/nav.scss */
+  /* line 100, assets/scss/nav.scss */
   footer .nav > li > a {
     color: #FFF;
     text-align: center; }
-    /* line 86, assets/scss/nav.scss */
+    /* line 104, assets/scss/nav.scss */
     footer .nav > li > a:hover {
       background-color: transparent;
       text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
-  /* line 92, assets/scss/nav.scss */
+  /* line 110, assets/scss/nav.scss */
   footer .social.nav {
     text-align: center; }
-    /* line 95, assets/scss/nav.scss */
+    /* line 113, assets/scss/nav.scss */
     footer .social.nav li {
       padding-top: 12px;
       display: inline-block; }
-      /* line 99, assets/scss/nav.scss */
+      /* line 117, assets/scss/nav.scss */
       footer .social.nav li a {
         color: #49281F;
         font-size: 32px;
         font-weight: 800; }
-        /* line 105, assets/scss/nav.scss */
+        /* line 123, assets/scss/nav.scss */
         footer .social.nav li a:hover {
           background-color: transparent;
           text-shadow: none;

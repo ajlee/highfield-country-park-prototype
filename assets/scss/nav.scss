@@ -65,7 +65,25 @@ nav.grid-nav {
 
       span {
         display:block;
-        padding-top:30px;
+        padding-top:$padding-base-vertical*2;
+
+        //@media (max-width: $screen-xs-max) {
+          &.contact::after {
+            content:"\f0e0";
+            font-family: "FontAwesome";
+            position: relative;
+            top:-24px;
+            display: block;
+            color:$linear_nav_text_colour;
+          }
+          &.contact {
+            color:transparent; /* still visible to screen readers */
+          }
+        //}
+        @media (min-width: $screen-sm) {
+          padding-top:$padding-base-vertical*4;
+        }
+
       }
     }
     &.chimney-image {
