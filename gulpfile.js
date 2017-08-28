@@ -67,8 +67,14 @@ gulp.task('vendor', function () {
     .pipe(gulp.dest('./src/assets/fonts'));
   gulp.src(['./node_modules/leaflet/dist/**/*'])
     .pipe(gulp.dest('./src/assets/js/vendor/leaflet'));
+  gulp.src(['./node_modules/jquery/dist/**/*'])
+    .pipe(gulp.dest('./src/assets/js/vendor/jquery'));
   gulp.src(['./node_modules/list.js/dist/**/*'])
     .pipe(gulp.dest('./src/assets/js/vendor/listjs'));
+  gulp.src(['./node_modules/bootstrap/dist/js/**/*'])
+    .pipe(gulp.dest('./src/assets/js/vendor/bootstrap'));
+  gulp.src(['./node_modules/bootstrap-validator/dist/**/*'])
+    .pipe(gulp.dest('./src/assets/js/vendor/bootstrap-validator'));
   gulp.src(['./node_modules/animate.scss/vendor/assets/stylesheets/**/*'])
     .pipe(gulp.dest('./src/vendor/animate.scss'));
   });

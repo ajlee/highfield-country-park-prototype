@@ -1,6 +1,6 @@
 @import "variables";
 
-ul {
+ul.bullets { /* don't add styles to unstyled list! */
   list-style: none;
 
   li:before {
@@ -56,6 +56,4 @@ ul {
   .category {
     display:none;
   }
-
-
 }
