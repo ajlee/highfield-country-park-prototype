@@ -1,18 +1,18 @@
-{% set title = 'Highfield Country Park - News and Events' %}
-
-{% set require = { listfilter: true }
-%}
-
-{# Links to other pages #}
-{% set home_url = 'index.html' %}
-{% set news_url = 'news-and-events.html' %}
-{% set gallery_url = '#' %}
-{% set map_url = 'map.html' %}
-{% set about_url = 'about.html' %}
-
 {% include './partials/header.twig' %}
-
+<!-- news-and-events.twig -->
 <body>
+  {% set title = 'Highfield Country Park - News and Events' %}
+
+  {% set require = { listfilter: true }
+  %}
+
+  {# Links to other pages #}
+  {% set home_url = 'index.html' %}
+  {% set news_url = 'news-and-events.html' %}
+  {% set gallery_url = '#' %}
+  {% set map_url = 'map.html' %}
+  {% set about_url = 'about.html' %}
+
     <header>
       {% include 'partials/linear-nav.twig' %}
     </header>
@@ -87,9 +87,8 @@
                         <span class="eyebrow"><label>Authored by:</label> Alex</span>
                       </article>
                     </li>
-
-                  </div>
-                </ul>
+                  </ul>
+                </div>
               </div>
             </div>
 

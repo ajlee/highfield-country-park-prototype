@@ -1,20 +1,16 @@
-{# set the title of the page #}
-{% set title = 'Highfield Country Park - A Space for Nature in Levenshulme and Reddish' %}
-
-{# tells the us what css and js to include #}
-{% set require = { } %}
-
-{# Links to other pages #}
-{% set home_url = 'index.html' %}
-{% set news_url = 'news-and-events.html' %}
-{% set gallery_url = '#' %}
-{% set map_url = 'map.html' %}
-{% set about_url = 'about.html' %}
-
-
 {% include './partials/header.twig' %}
+<!-- index.twig -->
 <body>
-
+  {# set the title of the page #}
+  {% set title = 'Highfield Country Park - A Space for Nature in Levenshulme and Reddish' %}
+  {# tells the us what css and js to include #}
+  {% set require = { } %}
+  {# Links to other pages #}
+  {% set home_url = 'index.html' %}
+  {% set news_url = 'news-and-events.html' %}
+  {% set gallery_url = '#' %}
+  {% set map_url = 'map.html' %}
+  {% set about_url = 'about.html' %}
     <header>
      {% include './partials/home-nav.twig' %}
     </header>
@@ -28,12 +24,12 @@
                 <p>
                   Highfield Country Park is a 70-acre (280,000 m2) area of open land, situated on the east side of Levenshulme, Manchester, that stretches to the east of Broom Avenue across to the rear of Reddish Golf Course and to the junction of Longford Road, Reddish and Nelstrop Road, Levenshulme.
                 </p>
-                <span class="eyebrow">
+                <div class="eyebrow">
                   <ul>
                     <li><a href="map.html"> Finding Highfield Country Park</a></li>
                     <li><a href="about.html"> More about the state and history of the park</a></li>
                   </ul>
-                </span>
+                </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-6">

@@ -1,19 +1,18 @@
-{# set the title of the page #}
-{% set title = 'Highfield Country Park - About the Park' %}
-
-{# tells the us what css and js to include #}
-{% set require = { } %}
-
-{# Links to other pages #}
-{% set home_url = 'index.html' %}
-{% set news_url = 'news-and-events.html' %}
-{% set gallery_url = '#' %}
-{% set map_url = 'map.html' %}
-{% set about_url = 'about.html' %}
-
 {% include './partials/header.twig' %}
-
+<!-- about.twig -->
 <body>
+  {# set the title of the page #}
+  {% set title = 'Highfield Country Park - About the Park' %}
+
+  {# tells the us what css and js to include #}
+  {% set require = { } %}
+
+  {# Links to other pages #}
+  {% set home_url = 'index.html' %}
+  {% set news_url = 'news-and-events.html' %}
+  {% set gallery_url = '#' %}
+  {% set map_url = 'map.html' %}
+  {% set about_url = 'about.html' %}
 
   <header>
     {% include 'partials/linear-nav.twig' %}
