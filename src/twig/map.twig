@@ -1,8 +1,18 @@
+{# set the title of the page #}
 {% set title = 'Highfield Country Park - How to Find the Park' %}
-{% set require = { map: true }
-%}
+
+{# tells the us what css and js to include #}
+{% set require = { map: true } %}
+
+{# Links to other pages #}
+{% set home_url = 'index.html' %}
+{% set news_url = 'news-and-events.html' %}
+{% set gallery_url = '#' %}
+{% set map_url = 'map.html' %}
+{% set about_url = 'about.html' %}
 
 {% include './partials/header.twig' %}
+
 <body>
   <div class="intro-content">
     <div class="container-fluid">

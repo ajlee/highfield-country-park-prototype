@@ -5,6 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var clean = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var twig_compile = require('gulp-twig-compile');
+var minify = require('gulp-minify');
 //var imageResize = require('gulp-image-resize'); /* todo: solve error - module not found error */
 
 /* moves assets to publish folder and runs sass/twig compile */
@@ -46,6 +47,12 @@ gulp.task('twig', function () {
 gulp.task('js', function () {
     return gulp.src('./src/assets/js/*.js')
         .pipe(concat('scripts.js'))
+        .pipe(minify({
+          ext:{
+              src:'-debug.js',
+              min:'.js'
+            }
+          }))
         .pipe(gulp.dest('publish/assets/js'));
     return gulp.src('./src/assets/js/**/*.js')
         .pipe(gulp.dest('publish/assets/js'));
