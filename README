@@ -1,10 +1,13 @@
 
-## ABOUT ##
+## ABOUT
 
 This project is created by Alex Lee for Highfield Country Park in Levenshulme, UK. This is just a prototype in HTML to get feedback from users before building this in a CMS.
 
+## METHOD
 
-## TODO ##
+The prototype is built in SCSS, Twig and JS, and uses Bootstrap and JQuery. To install the required libraries this use `yarn install` and then use `gulp vendor` to add these libraries to appropriate project folder. To publish the site, run `gulp publish` to output the site to the `/publish` folder.
+
+## TODO
 
 - tidy class and variable names
 - tidy up gulpfile and folder structure
