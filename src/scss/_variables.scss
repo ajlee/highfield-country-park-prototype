@@ -25,7 +25,7 @@ $homepage_main_image_height: 450px;
 $centre_bg_shorthand: center center / cover no-repeat;
 
 $padding_homepage_title_bottom_xs:$padding-base-vertical;
-$padding_homepage_title_bottom_sm:$homepage_main_image_height/3;
+$padding_homepage_title_bottom_sm:$homepage_main_image_height/6;
 
 $intro_content_padding_bottom_xs:$padding-base-vertical*2;
 $intro_content_padding_bottom_lg: $padding-base-vertical*2; /* careful to be above the fold */
@@ -56,13 +56,15 @@ $linear_nav_height:100px;
 $linear_nav_left_border:1px solid $colour_white;
 $linear_nav_bg_tint:rgba(0,0,0,0.5);
 $linear_nav_text_colour:$colour_white;
-$linear_nav_font_weight: 800;
+
 
 $grid_nav_font_size: $font-size-base*1.1;
 $grid_nav_blur_height: ($padding_grid_nav_text*2) + $grid_nav_font_size;
 
 $general_text_shadow: 0 0 10px rgba(0,0,0,0.5);
 $general_transition: all 1s ease;
+
+$font_weight_bold: 700;
 
 $footer_hover_bg: transparentize($colour_white, 0.5);
 

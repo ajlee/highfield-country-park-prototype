@@ -1,18 +1,25 @@
 
-<nav class="linear-nav">
-  <div class="linear-nav-image col-xs-4 chimney-image">
-      <a href="index.html" class="title-link"><span>Highfield Country Park</span></a>
+<div class="intro-content">
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="linear-nav">
+        <div class="linear-nav-image col-xs-12 col-sm-4 chimney-image home">
+            <h3><a href="{{ home_url }}" class="title-link">
+            <i class="fa fa-leaf title-icon"></i> Highfield Country Park</a></h3>
+        </div>
+        <div class="col-xs-3 col-sm-2 linear-nav-image path1-image">
+          <a href="{{ news_url }}"><div>News</div></a>
+        </div>
+        <div class="col-xs-3 col-sm-2 linear-nav-image path2-image">
+          <a href="{{ about_url }}"><div>About</div></a>
+        </div>
+        <div class="col-xs-3 col-sm-2 linear-nav-image path3-image">
+            <a href="{{ map_url }}"><div>Map</div></a>
+        </div>
+        <div class="col-xs-3 col-sm-2 linear-nav-image path4-image">
+          <a href="{{ gallery_url }}"><div>Gallery</div></a>
+        </div>
+      </nav>
+    </div>
   </div>
-  <div class="col-xs-2 linear-nav-image path1-image">
-    <a href="news-and-events.html"><span>News &amp; Events</span></a>
-  </div>
-  <div class="col-xs-2 linear-nav-image path2-image">
-    <a href="about.html"><span>About</span></a>
-  </div>
-  <div class="col-xs-2 linear-nav-image path3-image">
-      <a href="map.html"><span>Map</span></a>
-  </div>
-  <div class="col-xs-2 linear-nav-image path4-image">
-    <a href="#contact"><span class="contact">Gallery</span></a>
-  </div>
-</nav>
+</div>

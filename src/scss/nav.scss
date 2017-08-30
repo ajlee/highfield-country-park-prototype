@@ -7,7 +7,6 @@ nav.grid-nav {
     margin:0 -15px; /* expand back to edges of column */
   }
 
-
   a {
     position: absolute;
     display:block;
@@ -21,8 +20,6 @@ nav.grid-nav {
     font-weight:800;
     font-size:$grid_nav_font_size;
     line-height: $grid_nav_font_size;
-    text-shadow: $general_text_shadow;
-
 
     span {
       position: absolute;
@@ -42,14 +39,13 @@ nav.grid-nav {
 .linear-nav {
   height:$linear_nav_height;
 
+  .home {
+    background-color: $colour-white;
+  }
+
   .linear-nav-image {
     position:relative;
     height:$linear_nav_height;
-    border-left:$linear_nav_left_border;
-
-    &:first-of-type {
-      border-left:none;
-    }
 
     a {
       position:absolute;
@@ -60,58 +56,67 @@ nav.grid-nav {
       width:100%;
       background-color: $linear_nav_bg_tint;
       color:$linear_nav_text_colour;
-      font-weight:$linear_nav_font_weight;
+      font-weight:$font_weight_bold;
+      font-size: $font-size-base;
       text-align:center;
 
-      span {
+      div {
         display:block;
-        padding-top:$padding-base-vertical*2;
+        padding:$padding-base-vertical*2 $padding-base-horizontal;
 
-        @media (max-width: $screen-xs-max) {
-          &.contact::after {
-            content:"\f0e0";
-            font-family: "FontAwesome";
-            position: relative;
-            top:-24px;
-            display: block;
-            color:$linear_nav_text_colour;
-          }
-          &.contact {
-            color:transparent; /* still visible to screen readers */
-          }
-        }
         @media (min-width: $screen-sm) {
           padding-top:$padding-base-vertical*4;
         }
-
       }
     }
-    &.chimney-image {
-      text-shadow: 0 0 2px $colour_main_dark;
+    &.home a {
+      /* on mobile site name runs across 12 cols so need a bigger font */
+      @media (max-width: $screen-xs-max) {
+          position:static;
+          background-color: transparent;
+          color:$colour_main;
+          font-size: $font-size-h3;
+          margin-top: $padding-base-vertical*2;
+          text-decoration: none;
+          text-shadow: none;
+      }
+      /* home nav item flows across below 400px so need to reduce font size */
+      @media (max-width: 400px) {
+        margin-top: $padding-base-vertical*6;
+        font-size: $font-size-h4;
+      }
+      /* on tablet + we have the site name in a column so want a smaller font */
+      @media (min-width: $screen-sm-min) {
+        font-size: $font-size-base;
+      }
     }
   }
 }
 
 footer {
+  padding-top:$padding-base-vertical*4;
   background-color:transparent;
   /* colour set in html element
    * this results in the colour continuing off the page */
 
-  .nav > li > a {
-    color:$footer_font_colour;
-    text-align:center;
+  .nav {
+    padding-top:$padding-base-vertical*4;
+    & > li > a {
+      color:$footer_font_colour;
+      text-align:center;
 
-    &:hover {
-      background-color: transparent;
-      text-shadow: 0 0 10px $footer_hover_bg;
+      &:hover {
+        background-color: transparent;
+        text-shadow: 0 0 10px $footer_hover_bg;
+      }
     }
   }
 
-  .social.nav {
+  .social-nav {
     text-align:center;
 
     li {
-      padding-top:$padding_footer_social_top;
+      padding:$padding_footer_social_top 0 $padding-base-vertical*4;
       display:inline-block;
 
       a {
