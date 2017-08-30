@@ -1,59 +1,49 @@
+$(document).ready(function() {
 
-var options = {
-  valueNames: [ 'name', 'description', 'category' ]
-};
+  // options to use in filter and sort - matches class names
+  var options = {
+    valueNames: [ 'name', 'description', 'category' ]
+  };
+
+  // define button IDs
+  var featureList = new List('news-events-list', options);
+  var filterNewsButton = $("#filter-news");
+  var filterEventsButton = $("#filter-events");
+  var filterResetButton = $("#filter-reset");
 
 
-var featureList = new List('news-events-list', options);
+  // filter by news items
+  filterNewsButton.click(function(){
+    featureList.filter(function(item) {
 
-var filterNewsButton = document.getElementById("filter-news");
-var filterEventsButton = document.getElementById("filter-events");
-var filterResetButton = document.getElementById("filter-reset");
+      if (item.values().category == "News") {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    return false;
+  });
 
-filterNewsButton.onclick=function(){
-  console.log(1);
-  featureList.filter(function(item) {
+  // filter by event items
+  filterEventsButton.click(function(){
+    featureList.filter(function(item) {
 
-    if (item.values().category == "News") {
+      if (item.values().category == "Event") {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    return false;
+  });
+
+  // reset filter
+  filterResetButton.click(function(){
+    featureList.filter(function(item) {
       return true;
-    } else {
-      return false;
-    }
-  });
-  return false;
-};
-
-filterEventsButton.onclick=function(){
-  console.log(2);
-  featureList.filter(function(item) {
-
-    if (item.values().category == "Event") {
-      return true;
-    } else {
-      return false;
-    }
-  });
-  return false;
-};
-
-
-filterResetButton.onclick=function(){
-  console.log(3);
-  featureList.filter(function(item) {
-    return true;
-  });
-  return false;
-};
-
-featureList.on('updated', function (list) {
-  //every updated item take animation with their id
-  list.matchingItems.forEach(function (element) {
-    var id = element.elm.id;
-    console.log(id);
-
-    document.getElementById(id).classList.add('fadeIn');
-    document.getElementById(id).classList.add('animated');
+    });
+    return false;
   });
 });
-
 

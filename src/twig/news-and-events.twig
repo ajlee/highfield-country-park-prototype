@@ -1,24 +1,10 @@
-<!DOCTYPE HTML>
+{% set title = 'Highfield Country Park - News and Events' %}
 
-<!-- https://www.webcodegeeks.com/html5/html5-page-structure-example/ -->
+{% set require = { listfilter: true }
+%}
 
-<html lang="en">
-<head>
-<title>Highfield Country Park</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Merriweather:500,800" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,800' rel='stylesheet' type='text/css'>
+{% include './partials/header.twig' %}
 
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-<!-- FAVICON -->
-<link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
-
-<!-- My Styles -->
-<link href="assets/css/styles.css" rel="stylesheet">
-
-</head>
 <body>
   <div class="intro-content">
     <div class="container-fluid">
@@ -47,7 +33,7 @@
 
 
               <div id="news-events-list">
-                <ul class="list">
+                <ul class="list list-unstyled">
 
                   <li id="item-1">
                     <article>
@@ -110,11 +96,8 @@
       </div>
 
     </div>
-  <!-- Scripts -->
 
-  {% include './partials/footer.twig' %}
+    {% include './partials/footer.twig' %}
 
-    <script type="text/javascript" src="assets/js/vendor/listjs/list.js"></script>
-    <script type="text/javascript" src="assets/js/sort-filter.js"></script>
   </body>
 </html>

@@ -1,24 +1,8 @@
-<!DOCTYPE HTML>
+{% set title = 'Highfield Country Park - How to Find the Park' %}
+{% set require = { map: true }
+%}
 
-<!-- https://www.webcodegeeks.com/html5/html5-page-structure-example/ -->
-
-<html lang="en">
-<head>
-<title>Highfield Country Park</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Merriweather:500,800" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,800' rel='stylesheet' type='text/css'>
-
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-<!-- FAVICON -->
-<link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
-
-<!-- My Styles -->
-<link href="assets/css/styles.css" rel="stylesheet">
-
-</head>
+{% include './partials/header.twig' %}
 <body>
   <div class="intro-content">
     <div class="container-fluid">
@@ -78,17 +62,5 @@
   {% include './partials/footer.twig' %}
 
 </body>
-
-
-<!-- OSMap -->
-
-<link rel="stylesheet" type="text/css" href="assets/js/vendor/leaflet/leaflet.css" />
-<script type="text/javascript" src="assets/js/vendor/leaflet/leaflet.js"></script>
-<script type="text/javascript" src="assets/js/vendor/jquery/jquery.js"></script>
-<script type="text/javascript" src="assets/js/vendor/bootstrap/bootstrap.js"></script>
-
-<script type="text/javascript" src="assets/js/vendor/bootstrap-validator/validator.js"></script>
-<script type="text/javascript" src="assets/js/leafletembed.js"></script>
-<script type="text/javascript" src="assets/js/forms.js"></script>
 
 </html>

@@ -1,24 +1,7 @@
-<!DOCTYPE HTML>
+{% set title = 'Highfield Country Park - About the Park' %}
 
-<!-- https://www.webcodegeeks.com/html5/html5-page-structure-example/ -->
+{% include './partials/header.twig' %}
 
-<html lang="en">
-<head>
-<title>Highfield Country Park</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Merriweather:500,800" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,800' rel='stylesheet' type='text/css'>
-
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-<!-- FAVICON -->
-<link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
-
-<!-- My Styles -->
-<link href="assets/css/styles.css" rel="stylesheet">
-
-</head>
 <body>
   <div class="intro-content">
     <div class="container-fluid">
@@ -57,23 +40,13 @@
 
               <p>In 2017, plans for redeveloping an area of Highfield Country Park were passed by Manchester Council. Friends of Highfield Country Park objected to this decision but were overruled.</p>
 
-            </div><!-- /text-content -->
-          </div><!--/col-xs-12-->
-        </div><!-- /.row -->
-      </div><!--/.container-->
-    </div><!--/.outer container-->
-       <!--/.footer-->
-
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   {% include './partials/footer.twig' %}
 
-</body>
-
-
-<!-- OSMap -->
-
-<link rel="stylesheet" type="text/css" href="assets/vendor/leaflet/leaflet.css" />
-<script type="text/javascript" src="assets/vendor/leaflet/leaflet.js"></script>
-<script type="text/javascript" src="assets/js/leafletembed.js"></script>
-
+  </body>
 </html>

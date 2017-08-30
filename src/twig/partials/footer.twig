@@ -1,7 +1,6 @@
 <footer>
      <div class="footer" id="footer">
          <div class="container">
-
              <div class="row">
                 <div class="col-xs-12 contact">
 
@@ -12,26 +11,25 @@
              <div class="row">
                  <div class="col-md-3 col-xs-6">
                      <ul class="nav">
-                         <li> <a href="#"> About </a> </li>
+                         <li> <a href="about.html"> About </a> </li>
                      </ul>
                  </div>
                  <div class="col-md-3 col-xs-6">
                      <ul class="nav">
-                         <li> <a href="#"> Contact </a> </li>
+                         <li> <a href="#"> Gallery </a> </li>
                      </ul>
                  </div>
                  <div class="col-md-3 col-xs-6">
                      <ul class="nav">
-                         <li> <a href="#"> News &amp; Events </a> </li>
+                         <li> <a href="news-and-events"> News &amp; Events </a> </li>
                      </ul>
                  </div>
                  <div class="col-md-3 col-xs-6">
                      <ul class="nav">
-                         <li> <a href="#"> Map </a> </li>
+                         <li> <a href="map"> Map </a> </li>
                      </ul>
                  </div>
              </div>
-             <!--/.row-->
              <div class="row">
                <div class="col-xs-12">
                    <ul class="social nav">
@@ -42,9 +40,30 @@
                    </ul>
                </div>
              </div>
-             <!-- /.row -->
          </div>
-         <!--/.container-->
      </div>
-     <!--/.footer-->
   </footer>
+
+
+  <!-- all pages -->
+  <script type="text/javascript" src="assets/js/vendor/leaflet/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- forms & validation -->
+  <script type="text/javascript" src="assets/js/vendor/bootstrap-validator/validator.js"></script>
+
+  {% if require.map %}
+
+    <!-- OSMap -->
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/leaflet/leaflet.css" />
+    <script type="text/javascript" src="assets/js/vendor/leaflet/leaflet.js"></script>
+    <script type="text/javascript" src="assets/js/leafletembed.js"></script>
+
+  {% endif %}
+  {% if require.listfilter %}
+
+    <!-- lists -->
+    <script type="text/javascript" src="assets/js/vendor/listjs/list.min.js"></script>
+    <script type="text/javascript" src="assets/js/sort-filter.js"></script>
+
+  {% endif %}

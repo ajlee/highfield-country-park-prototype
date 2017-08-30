@@ -42,6 +42,14 @@ gulp.task('twig', function () {
         .pipe(gulp.dest('publish'));
 });
 
+// compile twig files
+gulp.task('js', function () {
+    return gulp.src('./src/assets/js/*.js')
+        .pipe(concat('scripts.js'))
+        .pipe(gulp.dest('publish/assets/js'));
+    return gulp.src('./src/assets/js/**/*.js')
+        .pipe(gulp.dest('publish/assets/js'));
+});
 
 // The default task (called when you run `gulp`)
 gulp.task('watch', function() {
@@ -49,9 +57,10 @@ gulp.task('watch', function() {
 
   // Watch files and run tasks if they change
 
-  gulp.watch(['./src/scss/*.scss','./src/twig/**/*.twig'], function() {
+  gulp.watch(['./src/scss/*.scss','./src/twig/**/*.twig','./src/assets/js/**/*.js'], function() {
     gulp.run('sass');
     gulp.run('twig');
+    gulp.run('js');
   })
 });
 
@@ -64,7 +73,7 @@ gulp.task('vendor', function () {
   gulp.src(['./node_modules/font-awesome-sass/assets/stylesheets/**/*.scss'])
     .pipe(gulp.dest('./src/vendor/font-awesome/scss'));
   gulp.src(['./node_modules/font-awesome-sass/assets/fonts/font-awesome/fontawesome-webfont.*'])
-    .pipe(gulp.dest('./src/assets/fonts'));
+    .pipe(gulp.dest('./src/assets/fonts/vendor/font-awesome'));
   gulp.src(['./node_modules/leaflet/dist/**/*'])
     .pipe(gulp.dest('./src/assets/js/vendor/leaflet'));
   gulp.src(['./node_modules/jquery/dist/**/*'])
@@ -73,6 +82,8 @@ gulp.task('vendor', function () {
     .pipe(gulp.dest('./src/assets/js/vendor/listjs'));
   gulp.src(['./node_modules/bootstrap/dist/js/**/*'])
     .pipe(gulp.dest('./src/assets/js/vendor/bootstrap'));
+  gulp.src(['./node_modules/bootstrap/dist/fonts/**/*'])
+    .pipe(gulp.dest('./src/assets/fonts/vendor/bootstrap'));
   gulp.src(['./node_modules/bootstrap-validator/dist/**/*'])
     .pipe(gulp.dest('./src/assets/js/vendor/bootstrap-validator'));
   gulp.src(['./node_modules/animate.scss/vendor/assets/stylesheets/**/*'])
