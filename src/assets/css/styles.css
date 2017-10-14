@@ -27998,7 +27998,7 @@ button.close {
 /* careful to be above the fold */
 /* font size in footer is 88% */
 /* line 3, src/scss/typography.scss */
-p, .body-content, .eyebrow {
+p, .body-content, .eyebrow, article li, article {
   font-family: Merriweather, Georgia, "Times New Roman", Times, serif;
   color: #564334;
   line-height: 1.7em;
