@@ -29,3 +29,5 @@ This will be hosted at bitballoon shortly which is a html hosting site, and hand
 - add google analytics and user analysis
 - improve petition link - should be on every page but permanently dismissable
 - remove blank lines in HTML output
+- Add Social Media metadata
+
