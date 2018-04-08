@@ -98,11 +98,22 @@ footer {
   display:block;
 }
 
-footer .contact {
-  margin-top:$padding_contact_top;
-  text-align: center;
 
-  .btn {
-    font-size: inherit;
+footer {
+   .contact {
+    margin-top:$padding_contact_top;
+    text-align: center;
+
+    .btn {
+      font-size: inherit;
+    }
+  }
+
+  .paypal form {
+    text-align: center;
+
+    input {
+      margin-left: 22px;
+    }
   }
 }

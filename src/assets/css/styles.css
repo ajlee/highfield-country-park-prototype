@@ -21783,13 +21783,20 @@ footer {
 .eyebrow {
   display: block; }
 
-/* line 101, src/scss/layout.scss */
+/* line 103, src/scss/layout.scss */
 footer .contact {
   margin-top: 12px;
   text-align: center; }
-  /* line 105, src/scss/layout.scss */
+  /* line 107, src/scss/layout.scss */
   footer .contact .btn {
     font-size: inherit; }
+
+/* line 112, src/scss/layout.scss */
+footer .paypal form {
+  text-align: center; }
+  /* line 115, src/scss/layout.scss */
+  footer .paypal form input {
+    margin-left: 22px; }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
