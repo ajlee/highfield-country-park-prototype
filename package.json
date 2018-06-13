@@ -25,5 +25,8 @@
   "version": "1.0.0",
   "main": "index.html",
   "author": "Alex <alexjameslee@mykolab.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.5.1"
+  }
 }
