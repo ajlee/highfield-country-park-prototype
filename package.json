@@ -1,13 +1,5 @@
 {
   "dependencies": {
-    "animate.scss": "^0.0.6",
-    "bootstrap": "^3.3.7",
-    "bootstrap-package-manager": "^1.1.8",
-    "bootstrap-sass": "^3.3.7",
-    "bootstrap-validator": "^0.11.9",
-    "compile": "^0.0.2",
-    "cssgram": "https://github.com/una/CSSgram.git",
-    "font-awesome-sass": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.7.0",
@@ -27,6 +19,7 @@
   "author": "Alex <alexjameslee@mykolab.com>",
   "license": "MIT",
   "devDependencies": {
-    "sass": "^1.5.1"
+    "sass": "^1.5.1",
+    "yargs": "^13.2.2"
   }
 }

@@ -1,3 +1,4 @@
+var argv = require('yargs').argv;
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
@@ -7,6 +8,9 @@ var rename = require("gulp-rename");
 var twig_compile = require('gulp-twig-compile');
 var minify = require('gulp-minify');
 //var imageResize = require('gulp-image-resize'); /* todo: solve error - module not found error */
+
+// use parameter --dev to produce non-minified files
+var isDev = (argv.dev === undefined) ? false : true;
 
 /* moves assets to publish folder and runs sass/twig compile */
 gulp.task('publish', function () {
@@ -26,12 +30,12 @@ gulp.task('sass', function () {
   	    cascade: false
   	}))
   	.pipe(concat('styles.css'))
-    .pipe(gulp.dest('./src/assets/css'));
-  gulp.src('src/assets/css/styles.css')
-    .pipe(clean())
-    .pipe(rename('styles.min.css'))
-    .pipe(gulp.dest('HTML/assets/css'));
-
+    	.pipe(gulp.dest('./src/assets/css'));
+   if(isDev) {
+	   gulp.src('src/assets/css/styles.css')
+	     .pipe(clean())
+	     .pipe(gulp.dest('./src/assets/css'));
+   }
 });
 
 // compile twig files
