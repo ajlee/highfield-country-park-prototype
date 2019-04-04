@@ -17,7 +17,7 @@ gulp.task('publish', function () {
   gulp.run('sass');
   gulp.run('twig');
   gulp.src(['src/assets/**/*'])
-    .pipe(gulp.dest('HTML/assets'));
+    .pipe(gulp.dest('../HFCP-HTML/assets'));
   });
 
 // Compile sass files
@@ -44,7 +44,7 @@ gulp.task('twig', function () {
     var twig = require('gulp-twig');
     return gulp.src('./src/twig/*.twig')
         .pipe(twig())
-        .pipe(gulp.dest('HTML'));
+        .pipe(gulp.dest('../HFCP-HTML'));
 });
 
 // compile twig files
@@ -57,9 +57,9 @@ gulp.task('js', function () {
               min:'.js'
             }
           }))
-        .pipe(gulp.dest('HTML/assets/js'));
+        .pipe(gulp.dest('../HFCP-HTML/assets/js'));
     return gulp.src('./src/assets/js/**/*.js')
-        .pipe(gulp.dest('HTML/assets/js'));
+        .pipe(gulp.dest('../HFCP-HTML/assets/js'));
 });
 
 // The default task (called when you run `gulp`)
